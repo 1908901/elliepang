@@ -12,4 +12,3 @@ title: This is my first post
 I like volleyball.
 I have played volleyball for 6 years.
 I am a sophomore at Del Norte high school.
-
