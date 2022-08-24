@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Markdown Post",
-            "content": "Markdown post . My first markdown post .",
+            "content": "Markdown post .",
             "url": "https://1908901.github.io/elliepang/markdown/2022/08/22/mark.html",
             "relUrl": "/markdown/2022/08/22/mark.html",
             "date": " • Aug 22, 2022"
@@ -36,7 +36,7 @@
     
         ,"post3": {
             "title": "This is my first notebook",
-            "content": "msg = &quot;Hello World&quot; print(msg) msg = &quot;hello&quot; . Hello World .",
+            "content": "msg = &quot;Hello World&quot; print(msg) . Hello World .",
             "url": "https://1908901.github.io/elliepang/jupyter/2022/08/22/My-First-Notebook.html",
             "relUrl": "/jupyter/2022/08/22/My-First-Notebook.html",
             "date": " • Aug 22, 2022"
