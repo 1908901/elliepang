@@ -24,17 +24,6 @@
   
     
         ,"post2": {
-            "title": "My Markdown Post",
-            "content": "Markdown Post . My down post .",
-            "url": "https://1908901.github.io/elliepang/2022/08/22/My-Markdown-Post.html",
-            "relUrl": "/2022/08/22/My-Markdown-Post.html",
-            "date": " • Aug 22, 2022"
-        }
-        
-    
-  
-    
-        ,"post3": {
             "title": "This is my first notebook",
             "content": "msg = &quot;Hello World&quot; print(msg) . Hello World .",
             "url": "https://1908901.github.io/elliepang/jupyter/2022/08/22/My-First-Notebook.html",
