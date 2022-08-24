@@ -13,7 +13,7 @@
   
     
         ,"post1": {
-            "title": "First Markdown Post",
+            "title": "Title",
             "content": "msg = &quot;Hello&quot; print (msg) . Hello .",
             "url": "https://1908901.github.io/elliepang/2022/08/22/prac.html",
             "relUrl": "/2022/08/22/prac.html",
