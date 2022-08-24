@@ -13,10 +13,10 @@
   
     
         ,"post1": {
-            "title": "First Markdown Post",
-            "content": "",
-            "url": "https://1908901.github.io/elliepang/2022/08/22/prac.html",
-            "relUrl": "/2022/08/22/prac.html",
+            "title": "Markdown Post",
+            "content": "My name is Ellie and I am a sophomore. .",
+            "url": "https://1908901.github.io/elliepang/markdown/2022/08/22/mark.html",
+            "relUrl": "/markdown/2022/08/22/mark.html",
             "date": " • Aug 22, 2022"
         }
         
@@ -24,10 +24,10 @@
   
     
         ,"post2": {
-            "title": "Markdown Post",
-            "content": "My name is Ellie and I am a sophomore. .",
-            "url": "https://1908901.github.io/elliepang/markdown/2022/08/22/mark.html",
-            "relUrl": "/markdown/2022/08/22/mark.html",
+            "title": "My Markdown Post",
+            "content": "Markdown Post . My down post .",
+            "url": "https://1908901.github.io/elliepang/2022/08/22/My-Markdown-Post.html",
+            "relUrl": "/2022/08/22/My-Markdown-Post.html",
             "date": " • Aug 22, 2022"
         }
         
