@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://1908901.github.io/elliepang/markdown/2020/01/14/test-markdown-post.html</loc>
-<lastmod>2020-01-14T00:00:00-06:00</lastmod>
-</url>
-<url>
 <loc>https://1908901.github.io/elliepang/jupyter/2020/02/20/test.html</loc>
 <lastmod>2020-02-20T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://1908901.github.io/elliepang/markdown/2022/08/21/My-First-Post.html</loc>
-<lastmod>2022-08-21T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>https://1908901.github.io/elliepang/2022/08/22/Ellie's-blog.html</loc>
-<lastmod>2022-08-22T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://1908901.github.io/elliepang/jupyter/2022/08/22/My-First-Notebook.html</loc>
@@ -30,6 +18,10 @@
 </url>
 <url>
 <loc>https://1908901.github.io/elliepang/2022/08/23/Ellie-Jupyter-Notebook.html</loc>
+<lastmod>2022-08-23T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://1908901.github.io/elliepang/2022/08/23/python.html</loc>
 <lastmod>2022-08-23T00:00:00-05:00</lastmod>
 </url>
 <url>

@@ -3,6 +3,17 @@
     
         "post0": {
             "title": "Title",
+            "content": "",
+            "url": "https://1908901.github.io/elliepang/2022/08/23/python.html",
+            "relUrl": "/2022/08/23/python.html",
+            "date": " • Aug 23, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
+            "title": "Title",
             "content": "import getpass, sys def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 3 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) question_and_answer(&quot;Are you ready to take a test?&quot;) rsp = question_with_response(&quot;What command is used to include other functions that are developed?&quot;) if rsp == &quot;import&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What command in this example is used to evaluate a response?&quot;) if rsp == &quot;if&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?&quot;) if rsp == &quot;expression&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) print(getpass.getuser() + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) .",
             "url": "https://1908901.github.io/elliepang/2022/08/23/Ellie-Jupyter-Notebook.html",
             "relUrl": "/2022/08/23/Ellie-Jupyter-Notebook.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "First Markdown Post",
             "content": "msg = &quot;Hello&quot; print (msg) . Hello .",
             "url": "https://1908901.github.io/elliepang/2022/08/22/prac.html",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "Markdown Post",
             "content": "Markdown post . My first markdown post .",
             "url": "https://1908901.github.io/elliepang/markdown/2022/08/22/mark.html",
@@ -34,7 +45,7 @@
     
   
     
-        ,"post3": {
+        ,"post4": {
             "title": "This is my first notebook",
             "content": "msg = &quot;Hello World&quot; print(msg) msg = &quot;hello&quot; . Hello World .",
             "url": "https://1908901.github.io/elliepang/jupyter/2022/08/22/My-First-Notebook.html",
@@ -45,45 +56,12 @@
     
   
     
-        ,"post4": {
-            "title": "Ellie's Blog",
-            "content": "msg = &quot;Hello&quot; print (msg) .",
-            "url": "https://1908901.github.io/elliepang/2022/08/22/Ellie's-blog.html",
-            "relUrl": "/2022/08/22/Ellie's-blog.html",
-            "date": " • Aug 22, 2022"
-        }
-        
-    
-  
-    
         ,"post5": {
-            "title": "This is my first post",
-            "content": "This is my first post . About me . I like volleyball. I have played volleyball for 6 years. I am a sophomore at Del Norte high school. .",
-            "url": "https://1908901.github.io/elliepang/markdown/2022/08/21/My-First-Post.html",
-            "relUrl": "/markdown/2022/08/21/My-First-Post.html",
-            "date": " • Aug 21, 2022"
-        }
-        
-    
-  
-    
-        ,"post6": {
             "title": "This is my first notebook",
             "content": "msg = &quot;Hello World&quot; print(msg) .",
             "url": "https://1908901.github.io/elliepang/jupyter/2020/02/20/test.html",
             "relUrl": "/jupyter/2020/02/20/test.html",
             "date": " • Feb 20, 2020"
-        }
-        
-    
-  
-    
-        ,"post7": {
-            "title": "An Example Markdown Post",
-            "content": "Example Markdown Post . Basic setup . Jekyll requires blog post files to be named according to the following format: . YEAR-MONTH-DAY-filename.md . Where YEAR is a four-digit number, MONTH and DAY are both two-digit numbers, and filename is whatever file name you choose, to remind yourself what this post is about. .md is the file extension for markdown files. . The first line of the file should start with a single hash character, then a space, then your title. This is how you create a “level 1 heading” in markdown. Then you can create level 2, 3, etc headings as you wish but repeating the hash character, such as you see in the line ## File names above. . Basic formatting . You can use italics, bold, code font text, and create links. Here’s a footnote 1. Here’s a horizontal rule: . . Lists . Here’s a list: . item 1 | item 2 | . And a numbered list: . item 1 | item 2 | Boxes and stuff . This is a quotation . . You can include alert boxes …and… . . You can include info boxes Images . . Code . You can format text and code per usual . General preformatted text: . # Do a thing do_thing() . Python code and output: . # Prints &#39;2&#39; print(1+1) . 2 . Formatting text as shell commands: . echo &quot;hello world&quot; ./some_script.sh --option &quot;value&quot; wget https://example.com/cat_photo1.png . Formatting text as YAML: . key: value - another_key: &quot;another value&quot; . Tables . Column 1 Column 2 . A thing | Another thing | . Tweetcards . Altair 4.0 is released! https://t.co/PCyrIOTcvvTry it with: pip install -U altairThe full list of changes is at https://t.co/roXmzcsT58 ...read on for some highlights. pic.twitter.com/vWJ0ZveKbZ . &mdash; Jake VanderPlas (@jakevdp) December 11, 2019 Footnotes . This is the footnote. &#8617; . |",
-            "url": "https://1908901.github.io/elliepang/markdown/2020/01/14/test-markdown-post.html",
-            "relUrl": "/markdown/2020/01/14/test-markdown-post.html",
-            "date": " • Jan 14, 2020"
         }
         
     
