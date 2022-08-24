@@ -2,17 +2,6 @@
   
     
         "post0": {
-            "title": "Title",
-            "content": "",
-            "url": "https://1908901.github.io/elliepang/2022/08/23/python.html",
-            "relUrl": "/2022/08/23/python.html",
-            "date": " • Aug 23, 2022"
-        }
-        
-    
-  
-    
-        ,"post1": {
             "title": "Bash",
             "content": "import getpass, sys def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 3 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) question_and_answer(&quot;Are you ready to take a test?&quot;) rsp = question_with_response(&quot;What command is used to include other functions that are developed?&quot;) if rsp == &quot;import&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What command in this example is used to evaluate a response?&quot;) if rsp == &quot;if&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?&quot;) if rsp == &quot;expression&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) print(getpass.getuser() + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) .",
             "url": "https://1908901.github.io/elliepang/2022/08/23/Ellie-Jupyter-Notebook.html",
@@ -23,7 +12,7 @@
     
   
     
-        ,"post2": {
+        ,"post1": {
             "title": "First Markdown Post",
             "content": "msg = &quot;Hello&quot; print (msg) . Hello .",
             "url": "https://1908901.github.io/elliepang/2022/08/22/prac.html",
@@ -34,7 +23,7 @@
     
   
     
-        ,"post3": {
+        ,"post2": {
             "title": "Markdown Post",
             "content": "Markdown post . My first markdown post .",
             "url": "https://1908901.github.io/elliepang/markdown/2022/08/22/mark.html",
@@ -45,23 +34,12 @@
     
   
     
-        ,"post4": {
+        ,"post3": {
             "title": "This is my first notebook",
             "content": "msg = &quot;Hello World&quot; print(msg) msg = &quot;hello&quot; . Hello World .",
             "url": "https://1908901.github.io/elliepang/jupyter/2022/08/22/My-First-Notebook.html",
             "relUrl": "/jupyter/2022/08/22/My-First-Notebook.html",
             "date": " • Aug 22, 2022"
-        }
-        
-    
-  
-    
-        ,"post5": {
-            "title": "This is my first notebook",
-            "content": "msg = &quot;Hello World&quot; print(msg) .",
-            "url": "https://1908901.github.io/elliepang/jupyter/2020/02/20/test.html",
-            "relUrl": "/jupyter/2020/02/20/test.html",
-            "date": " • Feb 20, 2020"
         }
         
     
