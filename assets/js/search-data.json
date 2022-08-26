@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Markdown Post",
+            "content": ".",
+            "url": "https://1908901.github.io/elliepang/markdown/2022/08/26/testing-out-images.html",
+            "relUrl": "/markdown/2022/08/26/testing-out-images.html",
+            "date": " • Aug 26, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Bash",
             "content": "import getpass, sys def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 3 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) question_and_answer(&quot;Are you ready to take a test?&quot;) rsp = question_with_response(&quot;What command is used to include other functions that are developed?&quot;) if rsp == &quot;import&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What command in this example is used to evaluate a response?&quot;) if rsp == &quot;if&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?&quot;) if rsp == &quot;expression&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) print(getpass.getuser() + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) .",
             "url": "https://1908901.github.io/elliepang/2022/08/23/Ellie-Jupyter-Notebook.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "Markdown Post",
             "content": "My name is Ellie and I am a sophomore. .",
             "url": "https://1908901.github.io/elliepang/markdown/2022/08/22/mark.html",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "This is my first notebook",
             "content": "msg = &quot;Hello World&quot; print(msg) . Hello World .",
             "url": "https://1908901.github.io/elliepang/jupyter/2022/08/22/My-First-Notebook.html",
@@ -55,6 +66,22 @@
   
 
   
+      ,"page5": {
+          "title": "Markdown Post",
+          "content": "In class we learned how to use bash and python such as python functions if/else statements and variables. We learned about keys and that bash can make scripts with terminal/shell. .",
+          "url": "https://1908901.github.io/elliepang/_pages/notes.html",
+          "relUrl": "/_pages/notes.html",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -63,18 +90,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page12": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://1908901.github.io/elliepang/robots.txt",
