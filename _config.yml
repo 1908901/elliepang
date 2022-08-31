@@ -101,7 +101,7 @@ plugins:
 paginate: 15
 paginate_path: /page:num/
 
-remote_theme: jekyll/minima
+remote_theme: jekyll/Midnight
 
 titles_from_headings:
   enabled:     true
@@ -121,6 +121,6 @@ kramdown:
 feed:
   posts_limit: 5 #default posts_limit: 10
   excerpt_only: true
-  
+
 exclude:
   - settings.ini
