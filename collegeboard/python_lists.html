@@ -263,9 +263,9 @@ person {'name': 'Ellie', 'age': 14, 'score': 99.0, 'langs': ['Python', 'JavaScri
     <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"October 21"</span><span class="p">,</span>
     <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
     <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"jmortensen@powayusd.com"</span><span class="p">,</span>
-    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2015-Fusion"</span><span class="p">,</span> <span class="s2">"2011-Ranger"</span><span class="p">,</span> <span class="s2">"2003-Excursion"</span><span class="p">,</span> <span class="s2">"1997-F350"</span><span class="p">,</span> <span class="s2">"1969-Cadillac"</span><span class="p">]</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2015-Fusion"</span><span class="p">,</span> <span class="s2">"2011-Ranger"</span><span class="p">,</span> <span class="s2">"2003-Excursion"</span><span class="p">,</span> <span class="s2">"1997-F350"</span><span class="p">,</span> <span class="s2">"1969-Cadillac"</span><span class="p">],</span>
     <span class="s2">"Favorite_Food"</span><span class="p">:</span> <span class="s2">"unknown"</span><span class="p">,</span>
-    <span class="s2">"Owns_a_pet"</span><span class="p">:</span> <span class="s2">"unknown"</span>
+    <span class="s2">"Owns"</span><span class="p">:</span> <span class="s2">"unknown"</span>
 <span class="p">})</span>
 
 <span class="c1"># Append to List a 2nd Dictionary of key/values</span>
@@ -275,10 +275,9 @@ person {'name': 'Ellie', 'age': 14, 'score': 99.0, 'langs': ['Python', 'JavaScri
     <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"November 1"</span><span class="p">,</span>
     <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"Del Sur"</span><span class="p">,</span>
     <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"elliepang007@gmail,com"</span><span class="p">,</span>
-    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"No"</span><span class="p">]</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"No"</span><span class="p">],</span>
     <span class="s2">"Favorite_Food"</span><span class="p">:</span> <span class="s2">"Sushi"</span><span class="p">,</span>
-    <span class="s2">"Owns_a_Pet"</span><span class="p">:</span> <span class="s2">"Yes"</span>
-    
+    <span class="s2">"Owns"</span><span class="p">:</span> <span class="s2">"Yes"</span>
 <span class="p">})</span>
 
 <span class="c1"># Print the data structure</span>
@@ -294,12 +293,8 @@ person {'name': 'Ellie', 'age': 14, 'score': 99.0, 'langs': ['Python', 'JavaScri
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [40]</span>
-<span class="ansi-red-fg">    "Favorite_Food": "unknown",</span>
-    ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{'FirstName': 'John', 'LastName': 'Mortensen', 'DOB': 'October 21', 'Residence': 'San Diego', 'Email': 'jmortensen@powayusd.com', 'Owns_Cars': ['2015-Fusion', '2011-Ranger', '2003-Excursion', '1997-F350', '1969-Cadillac'], 'Favorite_Food': 'unknown', 'Owns': 'unknown'}, {'FirstName': 'Ellie', 'LastName': 'Pang', 'DOB': 'November 1', 'Residence': 'Del Sur', 'Email': 'elliepang007@gmail,com', 'Owns_Cars': ['No'], 'Favorite_Food': 'Sushi', 'Owns': 'Yes'}]
 </pre>
 </div>
 </div>
@@ -343,7 +338,7 @@ person {'name': 'Ellie', 'age': 14, 'score': 99.0, 'langs': ['Python', 'JavaScri
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Cars: "</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>  <span class="c1"># end="" make sure no return occurs</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"Owns_Cars"</span><span class="p">]))</span>  <span class="c1"># join allows printing a string list with separator</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Favorite_Food:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Favorite_Food"</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Owns_a_Pet:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Pet_Owner"</span><span class="p">])</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Pet Owner:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Owns"</span><span class="p">])</span> 
     
 
 
@@ -372,33 +367,15 @@ John Mortensen
 	 Residence: San Diego
 	 Birth Day: October 21
 	 Cars: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+	 Favorite_Food: unknown
+	 Pet Owner: unknown
+Ellie Pang
+	 Residence: Del Sur
+	 Birth Day: November 1
+	 Cars: No
+	 Favorite_Food: Sushi
+	 Pet Owner: Yes
 </pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb Cell 7</span> in <span class="ansi-cyan-fg">&lt;cell line: 19&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=15'&gt;16&lt;/a&gt;</span>     for record in InfoDb:
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=16'&gt;17&lt;/a&gt;</span>         print_data(record)
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=18'&gt;19&lt;/a&gt;</span> for_loop()
-
-<span class="ansi-green-intense-fg ansi-bold">/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb Cell 7</span> in <span class="ansi-cyan-fg">for_loop</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=14'&gt;15&lt;/a&gt;</span> print("For loop output\n")
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=15'&gt;16&lt;/a&gt;</span> for record in InfoDb:
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=16'&gt;17&lt;/a&gt;</span>     print_data(record)
-
-<span class="ansi-green-intense-fg ansi-bold">/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb Cell 7</span> in <span class="ansi-cyan-fg">print_data</span><span class="ansi-blue-fg">(d_rec)</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> print("\t", "Cars: ", end="")  # end="" make sure no return occurs
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span> print(", ".join(d_rec["Owns_Cars"]))  # join allows printing a string list with separator
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> print("\t", "Favorite_Food:", d_rec["Favorite_Food"])
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> print("\t", "Owns_a_Pet:", d_rec["Pet_Owner"])
-
-<span class="ansi-red-fg">KeyError</span>: 'Favorite_Food'</pre>
 </div>
 </div>
 
@@ -457,35 +434,15 @@ John Mortensen
 	 Residence: San Diego
 	 Birth Day: October 21
 	 Cars: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+	 Favorite_Food: unknown
+	 Pet Owner: unknown
+Ellie Pang
+	 Residence: Del Sur
+	 Birth Day: November 1
+	 Cars: No
+	 Favorite_Food: Sushi
+	 Pet Owner: Yes
 </pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb Cell 9</span> in <span class="ansi-cyan-fg">&lt;cell line: 11&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span>         i += 1
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span>     return
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span> while_loop()
-
-<span class="ansi-green-intense-fg ansi-bold">/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb Cell 9</span> in <span class="ansi-cyan-fg">while_loop</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span> while i &lt; len(InfoDb):
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span>     record = InfoDb[i]
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span>     print_data(record)
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span>     i += 1
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> return
-
-<span class="ansi-green-intense-fg ansi-bold">/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb Cell 9</span> in <span class="ansi-cyan-fg">print_data</span><span class="ansi-blue-fg">(d_rec)</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> print("\t", "Cars: ", end="")  # end="" make sure no return occurs
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span> print(", ".join(d_rec["Owns_Cars"]))  # join allows printing a string list with separator
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> print("\t", "Favorite_Food:", d_rec["Favorite_Food"])
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> print("\t", "Owns_a_Pet:", d_rec["Pet_Owner"])
-
-<span class="ansi-red-fg">KeyError</span>: 'Favorite_Food'</pre>
 </div>
 </div>
 
@@ -545,12 +502,109 @@ John Mortensen
 	 Residence: San Diego
 	 Birth Day: October 21
 	 Cars: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
-
+	 Favorite_Food: unknown
+	 Pet Owner: unknown
 Ellie Pang
 	 Residence: Del Sur
 	 Birth Day: November 1
 	 Cars: No
+	 Favorite_Food: Sushi
+	 Pet Owner: Yes
+</pre>
+</div>
+</div>
 
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"pasta"</span><span class="p">,</span> <span class="s2">"pizza"</span><span class="p">,</span> <span class="s2">"strawberries"</span><span class="p">,</span> <span class="s2">"chips"</span><span class="p">,</span> <span class="s2">"french fries"</span><span class="p">,</span> <span class="s2">"cherries"</span><span class="p">]</span>
+<span class="c1"># while loop contains an initial n and an index incrementing statement (n += 1)</span>
+<span class="k">def</span> <span class="nf">while_loop</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"While loop output</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">food</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">food</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span>
+
+<span class="n">while_loop</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>While loop output
+
+pasta
+pizza
+strawberries
+chips
+french fries
+cherries
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">while_loop</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"While loop output</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&gt;=</span><span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">food</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        
+        <span class="n">i</span> <span class="o">-=</span> <span class="mi">1</span>
+    <span class="k">return</span>
+
+<span class="n">while_loop</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>While loop output
+
+cherries
+french fries
+chips
+strawberries
+pizza
+pasta
 </pre>
 </div>
 </div>
