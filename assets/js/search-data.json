@@ -57,17 +57,6 @@
   
     
         ,"post5": {
-            "title": "Title",
-            "content": "",
-            "url": "https://1908901.github.io/elliepang/2022/08/23/python.html",
-            "relUrl": "/2022/08/23/python.html",
-            "date": " • Aug 23, 2022"
-        }
-        
-    
-  
-    
-        ,"post6": {
             "title": "Markdown Post",
             "content": "My name is Ellie and I am a sophomore. .",
             "url": "https://1908901.github.io/elliepang/markdown/2022/08/22/mark.html",
@@ -78,18 +67,7 @@
     
   
     
-        ,"post7": {
-            "title": "Title",
-            "content": "ls . 2022-08-22-My-First-Notebook.ipynb README.md 2022-08-22-bash.ipynb ghtop_images/ 2022-08-23-Ellie-Jupyter-Notebook.ipynb my_icons/ .",
-            "url": "https://1908901.github.io/elliepang/2022/08/22/bash.html",
-            "relUrl": "/2022/08/22/bash.html",
-            "date": " • Aug 22, 2022"
-        }
-        
-    
-  
-    
-        ,"post8": {
+        ,"post6": {
             "title": "This is my first notebook",
             "content": "msg = &quot;Hello World&quot; print(msg) . Hello World .",
             "url": "https://1908901.github.io/elliepang/jupyter/2022/08/22/My-First-Notebook.html",
