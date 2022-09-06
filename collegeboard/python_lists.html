@@ -696,46 +696,46 @@ pasta
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#define:</span>
-<span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">questions</span> <span class="o">=</span> <span class="mi">4</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span>
 
-<span class="k">def</span> <span class="nf">q_a</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
-    <span class="n">answer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
-    <span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="n">a</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Good job! That is correct!"</span><span class="p">)</span>
-        <span class="n">score</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Good try! The answer is "</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="s2">"."</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">score</span>
- 
-<span class="c1">#intro:</span>
-<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your name:"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Hey! "</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
-<span class="n">ready</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"This quiz will have 4 questions."</span> <span class="o">+</span> <span class="s2">" Are you ready to start this quiz? Answer yes or no."</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">ready</span> <span class="o">==</span> <span class="s2">"yes"</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Let's get started!"</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Good Luck!"</span><span class="p">)</span>
+<span class="n">FoodQuestion</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Fruit"</span><span class="p">,</span> <span class="s2">"Vegetable"</span><span class="p">,</span> <span class="s2">"Soup"</span><span class="p">,</span> <span class="s2">"Drink"</span><span class="p">,</span> <span class="s2">"Snack"</span><span class="p">]</span>
+<span class="n">FoodAnswer</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Apple"</span><span class="p">,</span> <span class="s2">"Carrot"</span><span class="p">,</span> <span class="s2">"Clam Chowder"</span><span class="p">,</span> <span class="s2">"Milkshake"</span><span class="p">,</span> <span class="s2">"Chips"</span><span class="p">]</span>
+<span class="c1"># Lists (ignore these they aren't used in the code)</span>
 
-<span class="c1">#question 1:</span>
-<span class="n">score</span> <span class="o">=</span> <span class="n">score</span> <span class="o">+</span> <span class="n">q_a</span><span class="p">(</span><span class="s2">"1. How many points are in a set?"</span><span class="p">,</span> <span class="s2">"25"</span><span class="p">)</span>
+<span class="n">Food</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"Fruit"</span><span class="p">:</span> <span class="s2">"Apple"</span><span class="p">,</span>
+    <span class="s2">"Vegetable"</span><span class="p">:</span> <span class="s2">"Carrot"</span><span class="p">,</span>
+    <span class="s2">"Soup"</span><span class="p">:</span> <span class="s2">"Clam Chowder"</span><span class="p">,</span>
+    <span class="s2">"Drink"</span><span class="p">:</span> <span class="s2">"Milkshake"</span><span class="p">,</span>
+    <span class="s2">"Snack"</span><span class="p">:</span> <span class="s2">"Chips"</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="c1"># The dictionary/list dictionary</span>
 
-<span class="c1">#question 2:</span>
-<span class="n">score</span> <span class="o">=</span> <span class="n">score</span> <span class="o">+</span> <span class="n">q_a</span><span class="p">(</span><span class="s2">"2. How many people can be on the court at once?"</span><span class="p">,</span> <span class="s2">"6"</span><span class="p">)</span>
+<span class="n">CorrectList</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">IncorrectList</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="c1"># Empty dictionaries used to store data</span>
 
-<span class="c1">#question 3:</span>
-<span class="n">score</span> <span class="o">=</span> <span class="n">score</span> <span class="o">+</span> <span class="n">q_a</span><span class="p">(</span><span class="s2">"3. What is the defender in the back row with a different colored jersey called?"</span><span class="p">,</span> <span class="s2">"Libero"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">question_with_response</span><span class="p">(</span><span class="n">question</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"What is my favorite "</span> <span class="o">+</span> <span class="n">question</span> <span class="o">+</span> <span class="s2">"?"</span><span class="p">)</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">()</span>
+    <span class="k">return</span> <span class="n">msg</span>
 
-<span class="c1">#question 4:</span>
-<span class="n">score</span> <span class="o">=</span> <span class="n">score</span> <span class="o">+</span> <span class="n">q_a</span><span class="p">(</span><span class="s2">"4. What does the ref call when the server's foot crosses the line"</span><span class="p">,</span> <span class="s2">"Foot Fault"</span><span class="p">)</span>
+<span class="c1"># defines and prints question; asks for input</span>
 
-<span class="c1">#ending score</span>
-<span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Congratulations! You completed this quiz with an amazing score! You scored a: </span><span class="si">{}</span><span class="s2">/4"</span> <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">score</span><span class="p">))</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Congratulations! You completed the quiz. Your score is a: </span><span class="si">{}</span><span class="s2">/4"</span> <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">score</span><span class="p">))</span>
+<span class="k">def</span> <span class="nf">question</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">question</span> <span class="ow">in</span> <span class="n">FoodQuestion</span><span class="p">:</span>
+        <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="n">question</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">rsp</span> <span class="o">!=</span> <span class="n">Food</span> <span class="p">[</span><span class="n">question</span><span class="p">]):</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect."</span><span class="p">)</span>
+            <span class="n">IncorrectList</span> <span class="p">[</span><span class="n">question</span><span class="p">]</span> <span class="o">=</span> <span class="n">rsp</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct."</span><span class="p">)</span>
+            <span class="n">CorrectList</span> <span class="p">[</span><span class="n">question</span><span class="p">]</span> <span class="o">=</span> <span class="n">rsp</span>
+
+<span class="c1"># defines unit as one of the keys in the dictionary</span>
+<span class="c1"># answers are marked as incorrect if they do not match the values that go with the keys</span>
+        
+<span class="n">question</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -748,13 +748,16 @@ pasta
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Hey! ellie
-Let's get started!
-Good job! That is correct!
-Good job! That is correct!
-Good job! That is correct!
-Good job! That is correct!
-Congratulations! You completed this quiz with an amazing score! You scored a: 4/4
+<pre>What is my favorite Fruit?
+Apple is correct.
+What is my favorite Vegetable?
+Carrot is correct.
+What is my favorite Soup?
+Clam Chowder is correct.
+What is my favorite Drink?
+Milkshake is correct.
+What is my favorite Snack?
+Chips is correct.
 </pre>
 </div>
 </div>
