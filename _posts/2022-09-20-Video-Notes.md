@@ -1,3 +1,10 @@
+---
+toc: true
+layout: post
+description: 
+categories: [markdown]
+title: Focus and Habits and Collaborations
+---
 # Focus and Habits and Collaborations
 
 ## Completed Collaborations From Our Team 
