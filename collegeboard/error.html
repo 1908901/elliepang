@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      2 min read
     
 </span></p>
 
@@ -489,58 +489,22 @@ fries  $1.99
 drink  $0.99
 Please select an item from the menu.
 Selected: burger . Price: 3.99
-Selected: burger . Price: 3.99
 Selected: drink . Price: 0.99
 Selected: drink . Price: 0.99
-Selected: fries . Price: 1.99
+Incorrect
+Incorrect
+Incorrect
+Incorrect
+Incorrect
+Incorrect
+Incorrect
+Incorrect
+Incorrect
 Incorrect
 Incorrect
 Incorrect
 Incorrect
 </pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/elliepang007/vscode/elliepang/_notebooks/2022-10-03-AP-error_testing.ipynb Cell 11</span> in <span class="ansi-cyan-fg">&lt;cell line: 32&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/vscode/elliepang/_notebooks/2022-10-03-AP-error_testing.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=28&#39;&gt;29&lt;/a&gt;</span>                 print (&#39;Incorrect&#39;)
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/vscode/elliepang/_notebooks/2022-10-03-AP-error_testing.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=29&#39;&gt;30&lt;/a&gt;</span>     return total
-<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/vscode/elliepang/_notebooks/2022-10-03-AP-error_testing.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=31&#39;&gt;32&lt;/a&gt;</span> total = menuloop()
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/vscode/elliepang/_notebooks/2022-10-03-AP-error_testing.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=32&#39;&gt;33&lt;/a&gt;</span> print(total)
-
-<span class="ansi-green-intense-fg ansi-bold">/home/elliepang007/vscode/elliepang/_notebooks/2022-10-03-AP-error_testing.ipynb Cell 11</span> in <span class="ansi-cyan-fg">menuloop</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/vscode/elliepang/_notebooks/2022-10-03-AP-error_testing.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=20&#39;&gt;21&lt;/a&gt;</span> choice = &#39;&#39;
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/vscode/elliepang/_notebooks/2022-10-03-AP-error_testing.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=21&#39;&gt;22&lt;/a&gt;</span> while choice != &#39;done&#39;:
-<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/vscode/elliepang/_notebooks/2022-10-03-AP-error_testing.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=22&#39;&gt;23&lt;/a&gt;</span>     choice = input(&#39;Please select an item from the menu.&#39;)
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/vscode/elliepang/_notebooks/2022-10-03-AP-error_testing.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=23&#39;&gt;24&lt;/a&gt;</span>     if choice != &#39;done&#39;:
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/vscode/elliepang/_notebooks/2022-10-03-AP-error_testing.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=24&#39;&gt;25&lt;/a&gt;</span>         if choice in menu :
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/ipykernel/kernelbase.py:1075</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-fg">(self, prompt)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1071</span> if not self._allow_stdin:
-<span class="ansi-green-intense-fg ansi-bold">   1072</span>     raise StdinNotImplementedError(
-<span class="ansi-green-intense-fg ansi-bold">   1073</span>         &#34;raw_input was called, but this frontend does not support input requests.&#34;
-<span class="ansi-green-intense-fg ansi-bold">   1074</span>     )
-<span class="ansi-green-fg">-&gt; 1075</span> return self._input_request(
-<span class="ansi-green-intense-fg ansi-bold">   1076</span>     str(prompt),
-<span class="ansi-green-intense-fg ansi-bold">   1077</span>     self._parent_ident[&#34;shell&#34;],
-<span class="ansi-green-intense-fg ansi-bold">   1078</span>     self.get_parent(&#34;shell&#34;),
-<span class="ansi-green-intense-fg ansi-bold">   1079</span>     password=False,
-<span class="ansi-green-intense-fg ansi-bold">   1080</span> )
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/ipykernel/kernelbase.py:1120</span>, in <span class="ansi-cyan-fg">Kernel._input_request</span><span class="ansi-blue-fg">(self, prompt, ident, parent, password)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1117</span>             break
-<span class="ansi-green-intense-fg ansi-bold">   1118</span> except KeyboardInterrupt:
-<span class="ansi-green-intense-fg ansi-bold">   1119</span>     # re-raise KeyboardInterrupt, to truncate traceback
-<span class="ansi-green-fg">-&gt; 1120</span>     raise KeyboardInterrupt(&#34;Interrupted by user&#34;) from None
-<span class="ansi-green-intense-fg ansi-bold">   1121</span> except Exception:
-<span class="ansi-green-intense-fg ansi-bold">   1122</span>     self.log.warning(&#34;Invalid Message:&#34;, exc_info=True)
-
-<span class="ansi-red-fg">KeyboardInterrupt</span>: Interrupted by user</pre>
 </div>
 </div>
 

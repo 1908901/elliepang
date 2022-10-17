@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      6 min read
     
 </span></p>
 
@@ -437,190 +437,9 @@ tests_per_1m_population 2,990,303
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>JSON data is Python type: &lt;class 'dict'&gt;
+<pre>JSON data is Python type: &lt;class 'module'&gt;
 Did you insert a valid key in X-RapidAPI-Key of API cell above?
-{'message': 'You are not subscribed to this API.'}
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
-<span class="kn">import</span> <span class="nn">json</span>
-
-
-<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://shazam.p.rapidapi.com/search"</span>
-
-<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"term"</span><span class="p">:</span><span class="s2">"kiss the rain"</span><span class="p">,</span><span class="s2">"locale"</span><span class="p">:</span><span class="s2">"en-US"</span><span class="p">,</span><span class="s2">"offset"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span><span class="s2">"limit"</span><span class="p">:</span><span class="s2">"5"</span><span class="p">}</span>
-
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"e819277188msh68a6f7af77fad4dp172d06jsnc2bc1f8ab152"</span><span class="p">,</span>
-	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"shazam.p.rapidapi.com"</span>
-<span class="p">}</span>
-
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
-
-<span class="c1"># print(response.text) </span>
-
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Track_Name"</span><span class="p">)</span>
-<span class="n">tracks</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'tracks'</span><span class="p">)</span>
-<span class="n">hits</span> <span class="o">=</span> <span class="n">tracks</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'hits'</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">track</span> <span class="ow">in</span> <span class="n">hits</span><span class="p">:</span>
-	<span class="k">if</span> <span class="n">track</span> <span class="p">[</span><span class="s2">"track"</span><span class="p">][</span><span class="s1">'key'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'40099833'</span><span class="p">:</span>
-			<span class="n">json_formatted_str</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">track</span> <span class="p">[</span><span class="s2">"track"</span><span class="p">],</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-			<span class="nb">print</span> <span class="p">(</span><span class="n">json_formatted_str</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Track_Name
-{
-    "layout": "5",
-    "type": "MUSIC",
-    "key": "40099833",
-    "title": "Kiss The Rain",
-    "subtitle": "Yiruma",
-    "share": {
-        "subject": "Kiss The Rain - Yiruma",
-        "text": "I used Shazam to discover Kiss The Rain by Yiruma.",
-        "href": "https://www.shazam.com/track/40099833/kiss-the-rain",
-        "image": "https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/0a/d1/e8/0ad1e89c-df29-a43e-9852-eb6ece2dd556/21UMGIM24785.rgb.jpg/400x400cc.jpg",
-        "twitter": "I used @Shazam to discover Kiss The Rain by Yiruma.",
-        "html": "https://www.shazam.com/snippets/email-share/40099833?lang=en-US&amp;country=US",
-        "avatar": "https://is4-ssl.mzstatic.com/image/thumb/Features115/v4/3f/84/4e/3f844e97-8c23-b64d-87f1-d536e99f80e9/mzl.rsxdpqqq.jpg/800x800cc.jpg",
-        "snapchat": "https://www.shazam.com/partner/sc/track/40099833"
-    },
-    "images": {
-        "background": "https://is4-ssl.mzstatic.com/image/thumb/Features115/v4/3f/84/4e/3f844e97-8c23-b64d-87f1-d536e99f80e9/mzl.rsxdpqqq.jpg/800x800cc.jpg",
-        "coverart": "https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/0a/d1/e8/0ad1e89c-df29-a43e-9852-eb6ece2dd556/21UMGIM24785.rgb.jpg/400x400cc.jpg",
-        "coverarthq": "https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/0a/d1/e8/0ad1e89c-df29-a43e-9852-eb6ece2dd556/21UMGIM24785.rgb.jpg/400x400cc.jpg",
-        "joecolor": "b:0f1513p:f6f1ees:d7d6d1t:c7c5c2q:afafab"
-    },
-    "hub": {
-        "type": "APPLEMUSIC",
-        "image": "https://images.shazam.com/static/icons/hub/ios/v5/applemusic_{scalefactor}.png",
-        "actions": [
-            {
-                "name": "apple",
-                "type": "applemusicplay",
-                "id": "1576663126"
-            },
-            {
-                "name": "apple",
-                "type": "uri",
-                "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/b5/71/fd/b571fdea-62b9-64e8-1531-3d845cf6ee58/mzaf_8999534599011571502.plus.aac.ep.m4a"
-            }
-        ],
-        "options": [
-            {
-                "caption": "OPEN",
-                "actions": [
-                    {
-                        "name": "hub:applemusic:deeplink",
-                        "type": "applemusicopen",
-                        "uri": "https://music.apple.com/us/album/kiss-the-rain/1576662868?i=1576663126&amp;mttnagencyid=s2n&amp;mttnsiteid=125115&amp;mttn3pid=Apple-Shazam&amp;mttnsub1=Shazam_ios&amp;mttnsub2=5348615A-616D-3235-3830-44754D6D5973&amp;itscg=30201&amp;app=music&amp;itsct=Shazam_ios"
-                    },
-                    {
-                        "name": "hub:applemusic:deeplink",
-                        "type": "uri",
-                        "uri": "https://music.apple.com/us/album/kiss-the-rain/1576662868?i=1576663126&amp;mttnagencyid=s2n&amp;mttnsiteid=125115&amp;mttn3pid=Apple-Shazam&amp;mttnsub1=Shazam_ios&amp;mttnsub2=5348615A-616D-3235-3830-44754D6D5973&amp;itscg=30201&amp;app=music&amp;itsct=Shazam_ios"
-                    }
-                ],
-                "beacondata": {
-                    "type": "open",
-                    "providername": "applemusic"
-                },
-                "image": "https://images.shazam.com/static/icons/hub/ios/v5/overflow-open-option_{scalefactor}.png",
-                "type": "open",
-                "listcaption": "Open in Apple Music",
-                "overflowimage": "https://images.shazam.com/static/icons/hub/ios/v5/applemusic-overflow_{scalefactor}.png",
-                "colouroverflowimage": false,
-                "providername": "applemusic"
-            },
-            {
-                "caption": "BUY",
-                "actions": [
-                    {
-                        "type": "uri",
-                        "uri": "https://itunes.apple.com/us/album/kiss-the-rain/1576662868?i=1576663126&amp;mttnagencyid=s2n&amp;mttnsiteid=125115&amp;mttn3pid=Apple-Shazam&amp;mttnsub1=Shazam_ios&amp;mttnsub2=5348615A-616D-3235-3830-44754D6D5973&amp;itscg=30201&amp;app=itunes&amp;itsct=Shazam_ios"
-                    }
-                ],
-                "beacondata": {
-                    "type": "buy",
-                    "providername": "itunes"
-                },
-                "image": "https://images.shazam.com/static/icons/hub/ios/v5/itunes-overflow-buy_{scalefactor}.png",
-                "type": "buy",
-                "listcaption": "Buy on iTunes",
-                "overflowimage": "https://images.shazam.com/static/icons/hub/ios/v5/itunes-overflow-buy_{scalefactor}.png",
-                "colouroverflowimage": false,
-                "providername": "itunes"
-            }
-        ],
-        "providers": [
-            {
-                "caption": "Open in Spotify",
-                "images": {
-                    "overflow": "https://images.shazam.com/static/icons/hub/ios/v5/spotify-overflow_{scalefactor}.png",
-                    "default": "https://images.shazam.com/static/icons/hub/ios/v5/spotify_{scalefactor}.png"
-                },
-                "actions": [
-                    {
-                        "name": "hub:spotify:searchdeeplink",
-                        "type": "uri",
-                        "uri": "spotify:search:Kiss%20The%20Rain%20Yiruma"
-                    }
-                ],
-                "type": "SPOTIFY"
-            },
-            {
-                "caption": "Open in Deezer",
-                "images": {
-                    "overflow": "https://images.shazam.com/static/icons/hub/ios/v5/deezer-overflow_{scalefactor}.png",
-                    "default": "https://images.shazam.com/static/icons/hub/ios/v5/deezer_{scalefactor}.png"
-                },
-                "actions": [
-                    {
-                        "name": "hub:deezer:searchdeeplink",
-                        "type": "uri",
-                        "uri": "deezer-query://www.deezer.com/play?query=%7Btrack%3A%27Kiss+The+Rain%27%20artist%3A%27Yiruma%27%7D"
-                    }
-                ],
-                "type": "DEEZER"
-            }
-        ],
-        "explicit": false,
-        "displayname": "APPLE MUSIC"
-    },
-    "artists": [
-        {
-            "id": "42",
-            "adamid": "73406786"
-        }
-    ],
-    "url": "https://www.shazam.com/track/40099833/kiss-the-rain"
-}
+&lt;module 'json' from '/home/elliepang007/anaconda3/lib/python3.9/json/__init__.py'&gt;
 </pre>
 </div>
 </div>
@@ -679,6 +498,59 @@ Did you insert a valid key in X-RapidAPI-Key of API cell above?
 </ul>
 <p>Show API and format results in either Web Page or Jupyter Notebook.  Ultimately, I will expect that we do APIs in backend (Python/Flask).  However, for this Hack you can pick your preference.  We will discuss pros and cons in next API tech talk.</p>
 </blockquote>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://sameer-kumar-aztro-v1.p.rapidapi.com/"</span>
+
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"sign"</span><span class="p">:</span><span class="s2">"aquarius"</span><span class="p">,</span><span class="s2">"day"</span><span class="p">:</span><span class="s2">"today"</span><span class="p">}</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"b3323bf068msh78fdc9a03f97535p1332dcjsnfe5d256eaa9a"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"sameer-kumar-aztro-v1.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"POST"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{"date_range": "Jan 20 - Feb 18", "current_date": "October 10, 2022", "description": "Oh, sure -- just when you thought you were totally focused on what you were doing, you're suddenly ready to ditch it all, just to have one perfect, romantic moment. Lucky for you, it's the right time.", "compatibility": "Leo", "mood": "Sweet", "color": "Spring Green", "lucky_number": "20", "lucky_time": "1am"}
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Error: I was not able to organize the data neatly.</p>
 
 </div>
 </div>
