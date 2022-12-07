@@ -7,13 +7,13 @@ title:  Vocab
 ---
 # Fundamental Vocab Definitions 
 
-## Unit 3.1-3.2: [Hacks](https://1908901.github.io/elliepang/collegeboard/2022/11/29/hacks-for-3.2.html)|
+## Unit 3.1-3.2: [Hacks](https://1908901.github.io/elliepang/collegeboard/2022/11/29/hacks-for-3.2.html)
 
-## Unit 3.3-3.4: [Hacks](https://haeryny.github.io/trimester2group/)|
+## Unit 3.3-3.4: [Hacks](https://haeryny.github.io/trimester2group/)
 
-## Unit 3.5-3.7: [Hacks](https://github.com/MuffinMan1287/BARN/issues/5#issuecomment-1336691548)|
+## Unit 3.5-3.7: [Hacks](https://github.com/MuffinMan1287/BARN/issues/5#issuecomment-1336691548)
 
-## Unit 3.8-3.10:[Hacks](https://1908901.github.io/elliepang/2022/12/06/hacks.html)|
+## Unit 3.8-3.10:[Hacks](https://1908901.github.io/elliepang/2022/12/06/hacks.html)
 
 # Unit 2 Binary/Data Terms
 
