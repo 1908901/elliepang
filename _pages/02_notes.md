@@ -15,7 +15,7 @@ title:  Vocab
 ## Unit 3.5-3.7: [Hacks](https://github.com/MuffinMan1287/BARN/issues/5#issuecomment-1336691548)
 ### Grade: 0.90
 ## Unit 3.8-3.10:[Hacks](https://1908901.github.io/elliepang/2022/12/06/hacks.html) 
-### Grade: 0.97
+### Grade: 0.90
 
 # Unit 2 Binary/Data Terms
 
