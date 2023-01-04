@@ -1,4 +1,8 @@
-
+---
+toc: true
+layout: post
+title: hacks table submissions
+---
 ## Submission One
 
 |Reporting Category|Student Score|College Board Score|Comments|
