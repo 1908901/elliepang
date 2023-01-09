@@ -13,7 +13,7 @@ title: hacks table submissions
 |Algorithm Implementation with specific variables | 1 | 1 | I gave the student the same score as collegeboard. After reviewing the rubric, I thought that this student met the guidelines with no issues.|
 |Testing| 1 | 1 | I agree with collegeboard because I thought their response met all the guidelines and was very easy to understand.
 
-## SUbmission two 
+## Submission two 
 
 |Reporting Category|Student Score|College Board Score|Comments|
 |Program Purpose and Function|0|0|The response was unclear and did not meet the guidelines and collegeboard agreed.|
@@ -22,3 +22,6 @@ title: hacks table submissions
 |Procedural Abstraction| 1 | 1 | I agree with collegeboard because I thought their response met all the guidelines and was very easy to understand.|
 |Algorithm Implementation with specific variables | 1 | 1 | I gave the student the same score as collegeboard. After reviewing the rubric, I thought that this student met the guidelines with no issues.|
 |Testing| 1 | 1 | I agree with collegeboard because I thought their response met all the guidelines and was very easy to understand.|
+
+Overall, I think that my scoring and collegeboard's were pretty much the same. When I create my own create task I think it will be very important to not only meet every criterion but also to have a little more than what is required. This way, if collegeboard thinks that one of the lists (example) I have doesn't manage complexity, I will still have other lists that could fill this gap. In addition, I think that I will have to be very specific in my write-up and answer the questions precisely.
+
