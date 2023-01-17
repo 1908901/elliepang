@@ -134,9 +134,15 @@ person {&#39;name&#39;: &#39;Ellie&#39;, &#39;age&#39;: 14, &#39;score&#39;: 99.
     <span class="s2">&quot;DOB&quot;</span><span class="p">:</span> <span class="s2">&quot;October 21&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Residence&quot;</span><span class="p">:</span> <span class="s2">&quot;San Diego&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Email&quot;</span><span class="p">:</span> <span class="s2">&quot;jmortensen@powayusd.com&quot;</span><span class="p">,</span>
+<<<<<<< HEAD
+    <span class="s2">&quot;Owns_Cars&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;2015-Fusion&quot;</span><span class="p">,</span> <span class="s2">&quot;2011-Ranger&quot;</span><span class="p">,</span> <span class="s2">&quot;2003-Excursion&quot;</span><span class="p">,</span> <span class="s2">&quot;1997-F350&quot;</span><span class="p">,</span> <span class="s2">&quot;1969-Cadillac&quot;</span><span class="p">]</span>
+    <span class="s2">&quot;Favorite_Food&quot;</span><span class="p">:</span> <span class="s2">&quot;unknown&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Owns_a_pet&quot;</span><span class="p">:</span> <span class="s2">&quot;unknown&quot;</span>
+=======
     <span class="s2">&quot;Owns_Cars&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;2015-Fusion&quot;</span><span class="p">,</span> <span class="s2">&quot;2011-Ranger&quot;</span><span class="p">,</span> <span class="s2">&quot;2003-Excursion&quot;</span><span class="p">,</span> <span class="s2">&quot;1997-F350&quot;</span><span class="p">,</span> <span class="s2">&quot;1969-Cadillac&quot;</span><span class="p">],</span>
     <span class="s2">&quot;Favorite_Food&quot;</span><span class="p">:</span> <span class="s2">&quot;unknown&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Owns&quot;</span><span class="p">:</span> <span class="s2">&quot;unknown&quot;</span>
+>>>>>>> f44d76edc589c60593655631253fadb963713168
 <span class="p">})</span>
 
 <span class="c1"># Append to List a 2nd Dictionary of key/values</span>
@@ -146,9 +152,16 @@ person {&#39;name&#39;: &#39;Ellie&#39;, &#39;age&#39;: 14, &#39;score&#39;: 99.
     <span class="s2">&quot;DOB&quot;</span><span class="p">:</span> <span class="s2">&quot;November 1&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Residence&quot;</span><span class="p">:</span> <span class="s2">&quot;Del Sur&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Email&quot;</span><span class="p">:</span> <span class="s2">&quot;elliepang007@gmail,com&quot;</span><span class="p">,</span>
+<<<<<<< HEAD
+    <span class="s2">&quot;Owns_Cars&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;No&quot;</span><span class="p">]</span>
+    <span class="s2">&quot;Favorite_Food&quot;</span><span class="p">:</span> <span class="s2">&quot;Sushi&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Owns_a_Pet&quot;</span><span class="p">:</span> <span class="s2">&quot;Yes&quot;</span>
+    
+=======
     <span class="s2">&quot;Owns_Cars&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;No&quot;</span><span class="p">],</span>
     <span class="s2">&quot;Favorite_Food&quot;</span><span class="p">:</span> <span class="s2">&quot;Sushi&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Owns&quot;</span><span class="p">:</span> <span class="s2">&quot;Yes&quot;</span>
+>>>>>>> f44d76edc589c60593655631253fadb963713168
 <span class="p">})</span>
 
 <span class="c1"># Print the data structure</span>
@@ -164,8 +177,17 @@ person {&#39;name&#39;: &#39;Ellie&#39;, &#39;age&#39;: 14, &#39;score&#39;: 99.
 
 <div class="output_area">
 
+<<<<<<< HEAD
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [2]</span>
+<span class="ansi-red-fg">    &#34;Favorite_Food&#34;: &#34;unknown&#34;,</span>
+    ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+=======
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[{&#39;FirstName&#39;: &#39;John&#39;, &#39;LastName&#39;: &#39;Mortensen&#39;, &#39;DOB&#39;: &#39;October 21&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Email&#39;: &#39;jmortensen@powayusd.com&#39;, &#39;Owns_Cars&#39;: [&#39;2015-Fusion&#39;, &#39;2011-Ranger&#39;, &#39;2003-Excursion&#39;, &#39;1997-F350&#39;, &#39;1969-Cadillac&#39;], &#39;Favorite_Food&#39;: &#39;unknown&#39;, &#39;Owns&#39;: &#39;unknown&#39;}, {&#39;FirstName&#39;: &#39;Ellie&#39;, &#39;LastName&#39;: &#39;Pang&#39;, &#39;DOB&#39;: &#39;November 1&#39;, &#39;Residence&#39;: &#39;Del Sur&#39;, &#39;Email&#39;: &#39;elliepang007@gmail,com&#39;, &#39;Owns_Cars&#39;: [&#39;No&#39;], &#39;Favorite_Food&#39;: &#39;Sushi&#39;, &#39;Owns&#39;: &#39;Yes&#39;}]
+>>>>>>> f44d76edc589c60593655631253fadb963713168
 </pre>
 </div>
 </div>
@@ -203,7 +225,11 @@ person {&#39;name&#39;: &#39;Ellie&#39;, &#39;age&#39;: 14, &#39;score&#39;: 99.
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Cars: &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>  <span class="c1"># end=&quot;&quot; make sure no return occurs</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Owns_Cars&quot;</span><span class="p">]))</span>  <span class="c1"># join allows printing a string list with separator</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Favorite_Food:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Favorite_Food&quot;</span><span class="p">])</span>
+<<<<<<< HEAD
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Owns_a_Pet:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Pet_Owner&quot;</span><span class="p">])</span> 
+=======
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Pet Owner:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Owns&quot;</span><span class="p">])</span> 
+>>>>>>> f44d76edc589c60593655631253fadb963713168
     
 
 
@@ -232,6 +258,8 @@ John Mortensen
 	 Residence: San Diego
 	 Birth Day: October 21
 	 Cars: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+<<<<<<< HEAD
+=======
 	 Favorite_Food: unknown
 	 Pet Owner: unknown
 Ellie Pang
@@ -240,10 +268,40 @@ Ellie Pang
 	 Cars: No
 	 Favorite_Food: Sushi
 	 Pet Owner: Yes
+>>>>>>> f44d76edc589c60593655631253fadb963713168
 </pre>
 </div>
 </div>
 
+<<<<<<< HEAD
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb Cell 7</span> in <span class="ansi-cyan-fg">&lt;cell line: 19&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=15&#39;&gt;16&lt;/a&gt;</span>     for record in InfoDb:
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=16&#39;&gt;17&lt;/a&gt;</span>         print_data(record)
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=18&#39;&gt;19&lt;/a&gt;</span> for_loop()
+
+<span class="ansi-green-intense-fg ansi-bold">/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb Cell 7</span> in <span class="ansi-cyan-fg">for_loop</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=14&#39;&gt;15&lt;/a&gt;</span> print(&#34;For loop output\n&#34;)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=15&#39;&gt;16&lt;/a&gt;</span> for record in InfoDb:
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=16&#39;&gt;17&lt;/a&gt;</span>     print_data(record)
+
+<span class="ansi-green-intense-fg ansi-bold">/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb Cell 7</span> in <span class="ansi-cyan-fg">print_data</span><span class="ansi-blue-fg">(d_rec)</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span> print(&#34;\t&#34;, &#34;Cars: &#34;, end=&#34;&#34;)  # end=&#34;&#34; make sure no return occurs
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span> print(&#34;, &#34;.join(d_rec[&#34;Owns_Cars&#34;]))  # join allows printing a string list with separator
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span> print(&#34;\t&#34;, &#34;Favorite_Food:&#34;, d_rec[&#34;Favorite_Food&#34;])
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span> print(&#34;\t&#34;, &#34;Owns_a_Pet:&#34;, d_rec[&#34;Pet_Owner&#34;])
+
+<span class="ansi-red-fg">KeyError</span>: &#39;Favorite_Food&#39;</pre>
+</div>
+</div>
+
+=======
+>>>>>>> f44d76edc589c60593655631253fadb963713168
 </div>
 </div>
 
@@ -295,6 +353,8 @@ John Mortensen
 	 Residence: San Diego
 	 Birth Day: October 21
 	 Cars: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+<<<<<<< HEAD
+=======
 	 Favorite_Food: unknown
 	 Pet Owner: unknown
 Ellie Pang
@@ -303,10 +363,42 @@ Ellie Pang
 	 Cars: No
 	 Favorite_Food: Sushi
 	 Pet Owner: Yes
+>>>>>>> f44d76edc589c60593655631253fadb963713168
 </pre>
 </div>
 </div>
 
+<<<<<<< HEAD
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb Cell 9</span> in <span class="ansi-cyan-fg">&lt;cell line: 11&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span>         i += 1
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span>     return
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10&#39;&gt;11&lt;/a&gt;</span> while_loop()
+
+<span class="ansi-green-intense-fg ansi-bold">/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb Cell 9</span> in <span class="ansi-cyan-fg">while_loop</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4&#39;&gt;5&lt;/a&gt;</span> while i &lt; len(InfoDb):
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span>     record = InfoDb[i]
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span>     print_data(record)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span>     i += 1
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span> return
+
+<span class="ansi-green-intense-fg ansi-bold">/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb Cell 9</span> in <span class="ansi-cyan-fg">print_data</span><span class="ansi-blue-fg">(d_rec)</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span> print(&#34;\t&#34;, &#34;Cars: &#34;, end=&#34;&#34;)  # end=&#34;&#34; make sure no return occurs
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span> print(&#34;, &#34;.join(d_rec[&#34;Owns_Cars&#34;]))  # join allows printing a string list with separator
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span> print(&#34;\t&#34;, &#34;Favorite_Food:&#34;, d_rec[&#34;Favorite_Food&#34;])
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/elliepang007/elliepang/_notebooks/2022-08-29-TP120-python_lists.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span> print(&#34;\t&#34;, &#34;Owns_a_Pet:&#34;, d_rec[&#34;Pet_Owner&#34;])
+
+<span class="ansi-red-fg">KeyError</span>: &#39;Favorite_Food&#39;</pre>
+</div>
+</div>
+
+=======
+>>>>>>> f44d76edc589c60593655631253fadb963713168
 </div>
 </div>
 
@@ -359,12 +451,19 @@ John Mortensen
 	 Residence: San Diego
 	 Birth Day: October 21
 	 Cars: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+<<<<<<< HEAD
+
+=======
 	 Favorite_Food: unknown
 	 Pet Owner: unknown
+>>>>>>> f44d76edc589c60593655631253fadb963713168
 Ellie Pang
 	 Residence: Del Sur
 	 Birth Day: November 1
 	 Cars: No
+<<<<<<< HEAD
+
+=======
 	 Favorite_Food: Sushi
 	 Pet Owner: Yes
 </pre>
@@ -614,6 +713,7 @@ What is my favorite Drink?
  is incorrect.
 What is my favorite Snack?
  is incorrect.
+>>>>>>> f44d76edc589c60593655631253fadb963713168
 </pre>
 </div>
 </div>
