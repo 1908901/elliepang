@@ -134,9 +134,15 @@ person {&#39;name&#39;: &#39;Ellie&#39;, &#39;age&#39;: 14, &#39;score&#39;: 99.
     <span class="s2">&quot;DOB&quot;</span><span class="p">:</span> <span class="s2">&quot;October 21&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Residence&quot;</span><span class="p">:</span> <span class="s2">&quot;San Diego&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Email&quot;</span><span class="p">:</span> <span class="s2">&quot;jmortensen@powayusd.com&quot;</span><span class="p">,</span>
+<<<<<<< HEAD
     <span class="s2">&quot;Owns_Cars&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;2015-Fusion&quot;</span><span class="p">,</span> <span class="s2">&quot;2011-Ranger&quot;</span><span class="p">,</span> <span class="s2">&quot;2003-Excursion&quot;</span><span class="p">,</span> <span class="s2">&quot;1997-F350&quot;</span><span class="p">,</span> <span class="s2">&quot;1969-Cadillac&quot;</span><span class="p">]</span>
     <span class="s2">&quot;Favorite_Food&quot;</span><span class="p">:</span> <span class="s2">&quot;unknown&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Owns_a_pet&quot;</span><span class="p">:</span> <span class="s2">&quot;unknown&quot;</span>
+=======
+    <span class="s2">&quot;Owns_Cars&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;2015-Fusion&quot;</span><span class="p">,</span> <span class="s2">&quot;2011-Ranger&quot;</span><span class="p">,</span> <span class="s2">&quot;2003-Excursion&quot;</span><span class="p">,</span> <span class="s2">&quot;1997-F350&quot;</span><span class="p">,</span> <span class="s2">&quot;1969-Cadillac&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;Favorite_Food&quot;</span><span class="p">:</span> <span class="s2">&quot;unknown&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Owns&quot;</span><span class="p">:</span> <span class="s2">&quot;unknown&quot;</span>
+>>>>>>> f44d76edc589c60593655631253fadb963713168
 <span class="p">})</span>
 
 <span class="c1"># Append to List a 2nd Dictionary of key/values</span>
@@ -146,10 +152,16 @@ person {&#39;name&#39;: &#39;Ellie&#39;, &#39;age&#39;: 14, &#39;score&#39;: 99.
     <span class="s2">&quot;DOB&quot;</span><span class="p">:</span> <span class="s2">&quot;November 1&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Residence&quot;</span><span class="p">:</span> <span class="s2">&quot;Del Sur&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Email&quot;</span><span class="p">:</span> <span class="s2">&quot;elliepang007@gmail,com&quot;</span><span class="p">,</span>
+<<<<<<< HEAD
     <span class="s2">&quot;Owns_Cars&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;No&quot;</span><span class="p">]</span>
     <span class="s2">&quot;Favorite_Food&quot;</span><span class="p">:</span> <span class="s2">&quot;Sushi&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Owns_a_Pet&quot;</span><span class="p">:</span> <span class="s2">&quot;Yes&quot;</span>
     
+=======
+    <span class="s2">&quot;Owns_Cars&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;No&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;Favorite_Food&quot;</span><span class="p">:</span> <span class="s2">&quot;Sushi&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Owns&quot;</span><span class="p">:</span> <span class="s2">&quot;Yes&quot;</span>
+>>>>>>> f44d76edc589c60593655631253fadb963713168
 <span class="p">})</span>
 
 <span class="c1"># Print the data structure</span>
@@ -165,12 +177,17 @@ person {&#39;name&#39;: &#39;Ellie&#39;, &#39;age&#39;: 14, &#39;score&#39;: 99.
 
 <div class="output_area">
 
+<<<<<<< HEAD
 <div class="output_subarea output_text output_error">
 <pre>
 <span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [2]</span>
 <span class="ansi-red-fg">    &#34;Favorite_Food&#34;: &#34;unknown&#34;,</span>
     ^
 <span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+=======
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{&#39;FirstName&#39;: &#39;John&#39;, &#39;LastName&#39;: &#39;Mortensen&#39;, &#39;DOB&#39;: &#39;October 21&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Email&#39;: &#39;jmortensen@powayusd.com&#39;, &#39;Owns_Cars&#39;: [&#39;2015-Fusion&#39;, &#39;2011-Ranger&#39;, &#39;2003-Excursion&#39;, &#39;1997-F350&#39;, &#39;1969-Cadillac&#39;], &#39;Favorite_Food&#39;: &#39;unknown&#39;, &#39;Owns&#39;: &#39;unknown&#39;}, {&#39;FirstName&#39;: &#39;Ellie&#39;, &#39;LastName&#39;: &#39;Pang&#39;, &#39;DOB&#39;: &#39;November 1&#39;, &#39;Residence&#39;: &#39;Del Sur&#39;, &#39;Email&#39;: &#39;elliepang007@gmail,com&#39;, &#39;Owns_Cars&#39;: [&#39;No&#39;], &#39;Favorite_Food&#39;: &#39;Sushi&#39;, &#39;Owns&#39;: &#39;Yes&#39;}]
+>>>>>>> f44d76edc589c60593655631253fadb963713168
 </pre>
 </div>
 </div>
@@ -208,7 +225,11 @@ person {&#39;name&#39;: &#39;Ellie&#39;, &#39;age&#39;: 14, &#39;score&#39;: 99.
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Cars: &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>  <span class="c1"># end=&quot;&quot; make sure no return occurs</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Owns_Cars&quot;</span><span class="p">]))</span>  <span class="c1"># join allows printing a string list with separator</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Favorite_Food:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Favorite_Food&quot;</span><span class="p">])</span>
+<<<<<<< HEAD
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Owns_a_Pet:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Pet_Owner&quot;</span><span class="p">])</span> 
+=======
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Pet Owner:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Owns&quot;</span><span class="p">])</span> 
+>>>>>>> f44d76edc589c60593655631253fadb963713168
     
 
 
@@ -237,10 +258,22 @@ John Mortensen
 	 Residence: San Diego
 	 Birth Day: October 21
 	 Cars: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+<<<<<<< HEAD
+=======
+	 Favorite_Food: unknown
+	 Pet Owner: unknown
+Ellie Pang
+	 Residence: Del Sur
+	 Birth Day: November 1
+	 Cars: No
+	 Favorite_Food: Sushi
+	 Pet Owner: Yes
+>>>>>>> f44d76edc589c60593655631253fadb963713168
 </pre>
 </div>
 </div>
 
+<<<<<<< HEAD
 <div class="output_area">
 
 <div class="output_subarea output_text output_error">
@@ -267,6 +300,8 @@ John Mortensen
 </div>
 </div>
 
+=======
+>>>>>>> f44d76edc589c60593655631253fadb963713168
 </div>
 </div>
 
@@ -318,10 +353,22 @@ John Mortensen
 	 Residence: San Diego
 	 Birth Day: October 21
 	 Cars: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+<<<<<<< HEAD
+=======
+	 Favorite_Food: unknown
+	 Pet Owner: unknown
+Ellie Pang
+	 Residence: Del Sur
+	 Birth Day: November 1
+	 Cars: No
+	 Favorite_Food: Sushi
+	 Pet Owner: Yes
+>>>>>>> f44d76edc589c60593655631253fadb963713168
 </pre>
 </div>
 </div>
 
+<<<<<<< HEAD
 <div class="output_area">
 
 <div class="output_subarea output_text output_error">
@@ -350,6 +397,8 @@ John Mortensen
 </div>
 </div>
 
+=======
+>>>>>>> f44d76edc589c60593655631253fadb963713168
 </div>
 </div>
 
@@ -402,12 +451,269 @@ John Mortensen
 	 Residence: San Diego
 	 Birth Day: October 21
 	 Cars: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+<<<<<<< HEAD
 
+=======
+	 Favorite_Food: unknown
+	 Pet Owner: unknown
+>>>>>>> f44d76edc589c60593655631253fadb963713168
 Ellie Pang
 	 Residence: Del Sur
 	 Birth Day: November 1
 	 Cars: No
+<<<<<<< HEAD
 
+=======
+	 Favorite_Food: Sushi
+	 Pet Owner: Yes
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;pasta&quot;</span><span class="p">,</span> <span class="s2">&quot;pizza&quot;</span><span class="p">,</span> <span class="s2">&quot;strawberries&quot;</span><span class="p">,</span> <span class="s2">&quot;chips&quot;</span><span class="p">,</span> <span class="s2">&quot;french fries&quot;</span><span class="p">,</span> <span class="s2">&quot;cherries&quot;</span><span class="p">]</span>
+<span class="c1"># while loop contains an initial n and an index incrementing statement (n += 1)</span>
+<span class="k">def</span> <span class="nf">while_loop</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;While loop output</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">food</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">food</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span>
+
+<span class="n">while_loop</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>While loop output
+
+pasta
+pizza
+strawberries
+chips
+french fries
+cherries
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">while_loop</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;While loop output</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&gt;=</span><span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">food</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        
+        <span class="n">i</span> <span class="o">-=</span> <span class="mi">1</span>
+    <span class="k">return</span>
+
+<span class="n">while_loop</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>While loop output
+
+cherries
+french fries
+chips
+strawberries
+pizza
+pasta
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;pasta&quot;</span><span class="p">,</span> <span class="s2">&quot;pizza&quot;</span><span class="p">,</span> <span class="s2">&quot;strawberries&quot;</span><span class="p">,</span> <span class="s2">&quot;chips&quot;</span><span class="p">,</span> <span class="s2">&quot;french fries&quot;</span><span class="p">,</span> <span class="s2">&quot;cherries&quot;</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">while_loop</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;While loop output</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">i</span><span class="o">=</span><span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span><span class="o">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="n">food</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">food</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">i</span> <span class="o">+=</span><span class="mi">1</span>
+    <span class="k">return</span> 
+
+<span class="n">while_loop</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">while_loop</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;While loop output</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">i</span><span class="o">=</span><span class="mi">4</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&gt;=</span><span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">food</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">i</span> <span class="o">-=</span><span class="mi">1</span>
+    <span class="k">return</span>
+
+<span class="n">while_loop</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">food</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>While loop output
+
+pasta
+pizza
+strawberries
+chips
+french fries
+cherries
+While loop output
+
+french fries
+chips
+strawberries
+pizza
+pasta
+0 pasta
+1 pizza
+2 strawberries
+3 chips
+4 french fries
+5 cherries
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span>
+
+<span class="n">FoodQuestion</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Fruit&quot;</span><span class="p">,</span> <span class="s2">&quot;Vegetable&quot;</span><span class="p">,</span> <span class="s2">&quot;Soup&quot;</span><span class="p">,</span> <span class="s2">&quot;Drink&quot;</span><span class="p">,</span> <span class="s2">&quot;Snack&quot;</span><span class="p">]</span>
+<span class="n">FoodAnswer</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Apple&quot;</span><span class="p">,</span> <span class="s2">&quot;Carrot&quot;</span><span class="p">,</span> <span class="s2">&quot;Clam Chowder&quot;</span><span class="p">,</span> <span class="s2">&quot;Milkshake&quot;</span><span class="p">,</span> <span class="s2">&quot;Chips&quot;</span><span class="p">]</span>
+<span class="c1"># Lists (ignore these they aren&#39;t used in the code)</span>
+<span class="n">Food</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Fruit&quot;</span><span class="p">:</span> <span class="s2">&quot;Apple&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Vegetable&quot;</span><span class="p">:</span> <span class="s2">&quot;Carrot&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Soup&quot;</span><span class="p">:</span> <span class="s2">&quot;Clam Chowder&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Drink&quot;</span><span class="p">:</span> <span class="s2">&quot;Milkshake&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Snack&quot;</span><span class="p">:</span> <span class="s2">&quot;Chips&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="c1"># The dictionary/list dictionary</span>
+
+<span class="n">CorrectList</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">IncorrectList</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="c1"># Empty dictionaries used to store data</span>
+
+<span class="k">def</span> <span class="nf">question_with_response</span><span class="p">(</span><span class="n">question</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;What is my favorite &quot;</span> <span class="o">+</span> <span class="n">question</span> <span class="o">+</span> <span class="s2">&quot;?&quot;</span><span class="p">)</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">()</span>
+    <span class="k">return</span> <span class="n">msg</span>
+
+<span class="c1"># defines and prints question; asks for input</span>
+
+<span class="k">def</span> <span class="nf">question</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">question</span> <span class="ow">in</span> <span class="n">FoodQuestion</span><span class="p">:</span>
+        <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="n">question</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">rsp</span> <span class="o">!=</span> <span class="n">Food</span> <span class="p">[</span><span class="n">question</span><span class="p">]):</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect.&quot;</span><span class="p">)</span>
+            <span class="n">IncorrectList</span> <span class="p">[</span><span class="n">question</span><span class="p">]</span> <span class="o">=</span> <span class="n">rsp</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct.&quot;</span><span class="p">)</span>
+            <span class="n">CorrectList</span> <span class="p">[</span><span class="n">question</span><span class="p">]</span> <span class="o">=</span> <span class="n">rsp</span>
+
+<span class="c1"># defines unit as one of the keys in the dictionary</span>
+<span class="c1"># answers are marked as incorrect if they do not match the values that go with the keys</span>
+        
+<span class="n">question</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>What is my favorite Fruit?
+ is incorrect.
+What is my favorite Vegetable?
+ is incorrect.
+What is my favorite Soup?
+ is incorrect.
+What is my favorite Drink?
+ is incorrect.
+What is my favorite Snack?
+ is incorrect.
+>>>>>>> f44d76edc589c60593655631253fadb963713168
 </pre>
 </div>
 </div>

@@ -38,9 +38,12 @@ baseurl: "/elliepang" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
-  social_links:
-    twitter: fastdotai
-    github: fastai
+  skin: dark
+  #  social_links:
+  #    twitter: NighthawkCoding
+  #    github: nighthawkcoders
+  #   youtube_channel: UClIKOsDS5dsfzFA3zveDT3Q
+
 
 # Set this to true to get LaTeX math equation support
 use_math: 
@@ -49,9 +52,9 @@ use_math:
 show_description: true
 
 # Set this to true to display image previews on home page, if they exist
-show_image: false
+show_image: true
 
-# Set this to true to turn on annotations with hypothes.is (https://web.hypothes.is/)
+# Set this to true to turn on annotations with hypothes.is(https://web.hypothes.is/)
 annotations: false
 
 # Set this to true to display tags on each post
@@ -96,6 +99,7 @@ plugins:
   - jekyll-sitemap
   - jemoji
 
+
 # See https://jekyllrb.com/docs/pagination/
 # For pagination to work, you cannot have index.md at the root of your repo, instead you must rename this file to index.html
 paginate: 15
@@ -121,6 +125,7 @@ kramdown:
 feed:
   posts_limit: 5 #default posts_limit: 10
   excerpt_only: true
-
+  
 exclude:
   - settings.ini
+
