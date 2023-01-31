@@ -32,6 +32,12 @@ Shows the plan of project development (scrumboard) through spreadsheats
 
 Shows the manifesto
 
+## How we incorported Rebecca's talk
+
+We made a flowchart of our ideas, weekly plan, and individual tasks. 
+
+![]({{site.baseurl}}/images/Screen Shot 2023-01-31 at 1.05.47 PM.png)
+
 ## Preview Outline materials for CB
 purpose and function
 list + elements in list
