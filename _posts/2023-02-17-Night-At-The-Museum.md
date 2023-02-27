@@ -6,7 +6,6 @@ title: N@tM Blog
 
 # N@tM Blog 
 
-![]({{site.baseurl}}/images/us.jpg)
 ![]({{site.baseurl}}/images/yeung.jpg)
 ![]({{site.baseurl}}/images/art.jpg)
 ![]({{site.baseurl}}/images/club)
