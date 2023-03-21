@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      12 min read
     
 </span></p>
 
@@ -166,11 +166,19 @@ window.onload = wrap_img;
 <p>Uses PRAGMA statement to read schema.</p>
 </blockquote>
 <p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?</p>
+<p>defines how data is organized within a database. It specifies how the data is structured and how users and applications can access and manipulate it. Define the database's structure, including the types of data that can be stored, the connections between tables, and the guidelines for adding, updating, and deleting data.</p>
 <ul>
 <li>What is the purpose of identity Column in SQL database?</li>
+</ul>
+<p>a distinct value for each row that is added to the table. An identity column's function is to assign each table row a special identification number, which can be helpful for a number of reasons.</p>
+<ul>
 <li>What is the purpose of a primary key in SQL database?</li>
+</ul>
+<p>A primary key is a column or group of columns that allows each row in a table to be uniquely identified. A main key's function is to offer a trustworthy and effective means to locate and access particular rows in a table.</p>
+<ul>
 <li>What are the Data Types in SQL table?</li>
 </ul>
+<p>There are four basic data types in SQL table: boolean, integer, string, and blog.</p>
 
 </div>
 </div>
@@ -195,7 +203,7 @@ window.onload = wrap_img;
     <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
     
     <span class="c1"># Fetch results of Schema</span>
-    <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"PRAGMA table_info('users')"</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"PRAGMA table_info('dogs')"</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
 
     <span class="c1"># Print the results</span>
     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
@@ -218,10 +226,14 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>(0, 'id', 'INTEGER', 1, None, 1)
-(1, '_name', 'VARCHAR(255)', 1, None, 0)
-(2, '_uid', 'VARCHAR(255)', 1, None, 0)
-(3, '_password', 'VARCHAR(255)', 1, None, 0)
-(4, '_dob', 'DATE', 0, None, 0)
+(1, '_image', 'VARCHAR(255)', 1, None, 0)
+(2, '_link', 'VARCHAR(255)', 1, None, 0)
+(3, '_name', 'VARCHAR(255)', 1, None, 0)
+(4, '_uid', 'VARCHAR(255)', 1, None, 0)
+(5, '_breed', 'VARCHAR(255)', 1, None, 0)
+(6, '_sex', 'VARCHAR(255)', 1, None, 0)
+(7, '_dob', 'DATE', 0, None, 0)
+(8, '_price', 'VARCHAR(255)', 1, None, 0)
 </pre>
 </div>
 </div>
@@ -235,6 +247,21 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Connects to a SQLite database file located at instance/sqlite.db.</li>
+<li>Creates a cursor object to execute SQL queries.</li>
+<li>Executes an SQL query to fetch information about the "dogs" table, using the PRAGMA table_info() statement.</li>
+<li>Prints the results of the query, which will be a list of tuples containing information about each column in the "dogs" table.</li>
+<li>Closes the database connection.</li>
+<li>Finally, the code calls the schema() function, which executes the above tasks and prints the column information for the "dogs" table.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Reading-Users-table-in-Sqlite.db">
 <a class="anchor" href="#Reading-Users-table-in-Sqlite.db" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reading Users table in Sqlite.db<a class="anchor-link" href="#Reading-Users-table-in-Sqlite.db"> </a>
 </h2>
@@ -243,10 +270,20 @@ window.onload = wrap_img;
 </blockquote>
 <ul>
 <li>What is a connection object?  After you google it, what do you think it does?</li>
+</ul>
+<p>a connection between an application and a database management system represented as an object. commands to the database and receives the responses.</p>
+<ul>
 <li>Same for cursor object?</li>
+</ul>
+<p>An application can navigate the records or rows returned by a SQL query using a cursor object. The cursor offers a mechanism to iteratively read each row of a query's results and execute operations on them as they are accessed.</p>
+<ul>
 <li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
+</ul>
+<p>Executes a SQL statement using the syntax sql[, arguments]. The values to be associated to placeholders in the SQL statement are contained in a sequence or mapping that is part of the optional parameters argument. Executes a SQL query several times with various parameter sets using the executemany(sql, seq of parameters) function. A series of sequences or mappings holding the values to be associated to placeholders in the SQL query make up the seq of parameters argument. A single sequence is returned by the fetchone() function, or None if there are no more rows to fetch from the query result set. If there are additional rows in the query result set, fetchmany([size=cursor.arraysize]) fetches them, producing a collection of sequences otherwise.</p>
+<ul>
 <li>Is "results" an object?  How do you know?</li>
 </ul>
+<p>set equal to cursor.execute</p>
 
 </div>
 </div>
@@ -265,10 +302,10 @@ window.onload = wrap_img;
     <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
 
     <span class="c1"># Create a cursor object to execute SQL queries</span>
-    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>   <span class="c1"># open connection object: contains methods and attributes you need to alter data </span>
     
     <span class="c1"># Execute a SELECT statement to retrieve data from a table</span>
-    <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'SELECT * FROM users'</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'SELECT * FROM dogs'</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>  <span class="c1">#results is an object </span>
 
     <span class="c1"># Print the results</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -294,13 +331,12 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(1, 'Thomas Edison', 'toby', 'sha256$2wedblR0ZTxc6dVv$27407a21292ff569e97733a7fa015e466625f02dba798e5eff91d5e9f9a8f888', '1847-02-11')
-(2, 'Nikola Tesla', 'niko', 'sha256$rt6Jm0R82IxTsfuQ$ce1c9711cbfa81e1638fe7b16556245b9220b47952486d674403a19b224a40ef', '2023-03-15')
-(3, 'Alexander Graham Bell', 'lex', 'sha256$U8jfHgRJOYhMRJux$5fe152ebca70567019db151aeb5c356b4a05cdf087d21b994160d6aa113c489d', '2023-03-15')
-(4, 'Eli Whitney', 'whit', 'sha256$3Jj5gQLhMieAei5q$057acb0fa3dcf8cb811b1141e1bd05050e94b03536f9db26ae85b64348e0f3d2', '2023-03-15')
-(5, 'Indiana Jones', 'indi', 'sha256$jxXaKlgALCqcOvFp$64d1c714273f6e531ed39338bef0860f608f70adc52080a02e979834392e149d', '1920-10-21')
-(6, 'Marion Ravenwood', 'raven', 'sha256$1sNIYz9am5XrvnqJ$aa6bf3917e33ddf687d94fade39687648b7b86dbc62e5e1eb7f5155833a35ade', '1921-10-21')
-(7, 'ellie pang', 'thomas edison', 'Snoopy', '2007-11-01')
+<pre>(1, 'https://do31x39459kz9.cloudfront.net/storage/image/cc7c5dd6a09649e3bf5c6bca96b21daa-1670625496-1670625511-jpg/1024-0-', 'https://haeryny.github.io/teamteam/doginfo/', 'Joe', '81729', 'Labrador Retriever Blend', 'male', '2022-02-11', '200')
+(2, 'https://do31x39459kz9.cloudfront.net/storage/image/672cb9b41e7548f68316d4a328c772d2-1673989499-1673989524-jpg/1024-0-', 'https://haeryny.github.io/teamteam/doginfo/', 'Bean', '83792', 'Shepherd-Rottweiler Blend', 'male', '2019-01-31', '180')
+(3, 'https://do31x39459kz9.cloudfront.net/storage/image/9f57a9ccb04d489c8e0faeb7a6aaecc1-1671755085-1671755107-jpg/1024-0-', 'https://haeryny.github.io/teamteam/doginfo/', 'Harry', '80032', 'Hound-Terrier Blend', 'male', '2020-04-29', '160')
+(4, 'https://do31x39459kz9.cloudfront.net/storage/image/7a0fd8c5107f469a8b6e3ec6db1bc48a-1671827148-1671827194-jpg/1024-0-', 'https://haeryny.github.io/teamteam/doginfo/', 'Honey', '90276', 'Retriever Blend', 'female', '2021-11-01', '200')
+(5, 'https://do31x39459kz9.cloudfront.net/storage/image/3b17d9a97b4e41ff984e54467d122820-1670895829-1670895970-jpg/1024-0-', 'https://haeryny.github.io/teamteam/doginfo/', 'George', '90277', 'Retriever Blend', 'male', '2021-11-01', '200')
+(6, 'https://do31x39459kz9.cloudfront.net/storage/image/574b155c13f5453093faa9a9bbe6cc09-1672428396-1672428453-jpg/1024-0-', 'https://fluffyfriendfinder.nighthawkcodingsociety.com/6', 'Julie', '91236', 'Black Mouth Cur Blend', 'female', '2022-04-09', '100')
 </pre>
 </div>
 </div>
@@ -338,10 +374,14 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
 
 <span class="k">def</span> <span class="nf">create</span><span class="p">():</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your name:"</span><span class="p">)</span>
-    <span class="n">uid</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your user id:"</span><span class="p">)</span>
-    <span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your password"</span><span class="p">)</span>
-    <span class="n">dob</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your date of birth 'YYYY-MM-DD'"</span><span class="p">)</span>
+    <span class="n">image</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter image link:"</span><span class="p">)</span>
+    <span class="n">link</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter link to dog info:"</span><span class="p">)</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter dog name:"</span><span class="p">)</span>
+    <span class="n">uid</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter UID:"</span><span class="p">)</span>
+    <span class="n">breed</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter dog breed:"</span><span class="p">)</span>
+    <span class="n">sex</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter dog sex:"</span><span class="p">)</span>
+    <span class="n">dob</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter dog date of birth:"</span><span class="p">)</span>
+    <span class="n">price</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter dog price:"</span><span class="p">)</span>
     
     <span class="c1"># Connect to the database file</span>
     <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
@@ -351,7 +391,7 @@ window.onload = wrap_img;
 
     <span class="k">try</span><span class="p">:</span>
         <span class="c1"># Execute an SQL command to insert data into a table</span>
-        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO users (_name, _uid, _password, _dob) VALUES (?, ?, ?, ?)"</span><span class="p">,</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">dob</span><span class="p">))</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO dogs (_image, _link, _name, _uid, _breed, _sex, _dob, _price) VALUES (?, ?, ?, ?, ?, ?, ?, ?)"</span><span class="p">,</span> <span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">link</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">breed</span><span class="p">,</span> <span class="n">sex</span><span class="p">,</span> <span class="n">dob</span><span class="p">,</span> <span class="n">price</span><span class="p">))</span>
         
         <span class="c1"># Commit the changes to the database</span>
         <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
@@ -365,10 +405,24 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#create()</span>
+<span class="n">create</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A new user record 56788 has been created
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -385,14 +439,85 @@ window.onload = wrap_img;
 <p>Uses SQL UPDATE to modify password</p>
 <ul>
 <li>What does the hacked part do?</li>
-<li>Explain try/except, when would except occur?</li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
 </ul>
 </blockquote>
+<p>The portion of the code that has been compromised checks to see if the user-entered new password is less than two characters in length. The message variable is set to "hacked" and the password variable is set to "gothackednewpassword123" if the length is less than 2. This implies that if someone tries to set a simple or brief password, a harder password will be automatically provided to them.</p>
+<ul>
+<li>Explain try/except, when would except occur?</li>
+</ul>
+<p>A control flow statement for handling errors is try/except. The try block's function is run, and if an error is made, control is instantly passed to the except block. The program is able to carry on by handling the error in the unless block and catching it. Try/except is helpful when you anticipate a piece of code might result in an error but don't want the program to crash if it does. Instead, you should gracefully manage the error and carry on with the remainder of the application.</p>
+<ul>
+<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
+</ul>
+<p>To allow the code to continue executing even in the event of a user input error, try/except is repeated.</p>
 
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">update</span><span class="p">():</span>
+    <span class="n">uid</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter UID to update"</span><span class="p">)</span>
+    <span class="n">price</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter updated price"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">price</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">500</span><span class="p">:</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="s2">"price is too expensive"</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="s2">"successfully updated"</span>
+
+    <span class="c1"># Connect to the database file</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+
+    <span class="c1"># Create a cursor object to execute SQL commands</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Execute an SQL command to update data in a table</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"UPDATE dogs SET _price = ? WHERE _uid = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">price</span><span class="p">,</span> <span class="n">uid</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">cursor</span><span class="o">.</span><span class="n">rowcount</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="c1"># The uid was not found in the table</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"No uid </span><span class="si">{</span><span class="n">uid</span><span class="si">}</span><span class="s2"> was found in the table"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The row with user id </span><span class="si">{</span><span class="n">uid</span><span class="si">}</span><span class="s2"> the price has been </span><span class="si">{</span><span class="n">message</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+    <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while executing the UPDATE:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+        
+    
+    <span class="c1"># Close the cursor and connection objects</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    
+<span class="n">update</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The row with user id 91236 the price has been successfully updated
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -454,9 +579,13 @@ window.onload = wrap_img;
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
 <li>Is DELETE a dangerous operation?  Why?</li>
-<li>In the print statemements, what is the "f" and what does {uid} do?</li>
 </ul>
 </blockquote>
+<p>Well, if you are careless and don't have a backup, you could lose all the data in that row forever.</p>
+<ul>
+<li>In the print statemements, what is the "f" and what does {uid} do?</li>
+</ul>
+<p>It is simpler to create strings with dynamic content by using f-strings, which allow expressions to be encapsulated inside string literals. The value of the uid variable is the result of the expression "uid".</p>
 
 </div>
 </div>
@@ -515,9 +644,13 @@ window.onload = wrap_img;
 <p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
 <ul>
 <li>Why does the menu repeat?</li>
-<li>Could you refactor this menu?  Make it work with a List?</li>
 </ul>
 </blockquote>
+<p>It calls on itself since it is a recursion until a condition is satisfied.</p>
+<ul>
+<li>Could you refactor this menu?  Make it work with a List?</li>
+</ul>
+<p>Yeah, you can use a list to reduce the number of elifs you need to employ, which will make the code more effective. Thus, you may store "c,r,u,d,s" in a list.</p>
 
 </div>
 </div>
@@ -563,7 +696,8 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Perform Jupyter 'Run All' prior to starting menu
+<pre>No uid 91236 was not found in the table
+No uid 90277 was not found in the table
 </pre>
 </div>
 </div>
@@ -594,6 +728,103 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>CRUD</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">menu</span><span class="p">():</span>
+    <span class="n">operations</span> <span class="o">=</span> <span class="p">[</span> <span class="c1"># cruds placed into a dictionary, keys </span>
+        <span class="p">(</span><span class="s1">'c'</span><span class="p">,</span> <span class="n">create</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">'r'</span><span class="p">,</span> <span class="n">read</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">'u'</span><span class="p">,</span> <span class="n">update</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">'d'</span><span class="p">,</span> <span class="n">delete</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">'s'</span><span class="p">,</span> <span class="n">schema</span><span class="p">)</span>
+    <span class="p">]</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">operation</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter: (C)reate (R)ead (U)pdate or (D)elete or (S)chema"</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">operation</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="c1"># Escape Key</span>
+            <span class="k">return</span> <span class="c1">#</span>
+        <span class="k">for</span> <span class="n">op</span> <span class="ow">in</span> <span class="n">operations</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">op</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span> <span class="c1"># checks whether the user's input matches the current option being considered in the loop. </span>
+                <span class="n">op</span><span class="p">[</span><span class="mi">1</span><span class="p">]()</span>
+                <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Please enter c, r, u, d, or s"</span><span class="p">)</span> <span class="c1"># if no match, print prompt </span>
+        
+<span class="n">menu</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+<span class="kn">from</span> <span class="nn">tabulate</span> <span class="kn">import</span> <span class="n">tabulate</span>
+
+<span class="c1"># Connect to the SQLite database</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'instance/sqlite.db'</span><span class="p">)</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="c1"># Select all rows from the "dogs" table</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"SELECT id, _name, _uid, _breed, _sex, _dob, _price FROM dogs"</span><span class="p">)</span>
+<span class="n">rows</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+<span class="c1"># Use tabulate to format the rows as a table</span>
+<span class="n">table</span> <span class="o">=</span> <span class="n">tabulate</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="p">[</span><span class="s2">"ID"</span><span class="p">,</span> <span class="s2">"Name"</span><span class="p">,</span> <span class="s2">"UID"</span><span class="p">,</span> <span class="s2">"Breed"</span><span class="p">,</span> <span class="s2">"Sex"</span><span class="p">,</span> <span class="s2">"DOB"</span><span class="p">,</span> <span class="s2">"Price"</span><span class="p">])</span>
+
+<span class="c1"># Print the table</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>  ID  Name      UID  Breed                      Sex     DOB           Price
+----  ------  -----  -------------------------  ------  ----------  -------
+   1  Joe     81729  Labrador Retriever Blend   male    2022-02-11      200
+   2  Bean    83792  Shepherd-Rottweiler Blend  male    2019-01-31      180
+   3  Harry   80032  Hound-Terrier Blend        male    2020-04-29      160
+   4  Honey   90276  Retriever Blend            female  2021-11-01      200
+   5  George  90277  Retriever Blend            male    2021-11-01      200
+   6  Julie   91236  Black Mouth Cur Blend      female  2022-04-09      250
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
