@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      8 min read
     
 </span></p>
 
@@ -525,6 +525,184 @@ The Man
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">folklore_album</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"folklore"</span><span class="p">,</span>
+    <span class="s2">"artist"</span><span class="p">:</span> <span class="s2">"Taylor Swift"</span><span class="p">,</span>
+    <span class="s2">"year"</span><span class="p">:</span> <span class="mi">2020</span><span class="p">,</span>
+    <span class="s2">"genre"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Alternative rock"</span><span class="p">,</span> <span class="s2">"Indie folk"</span><span class="p">,</span> <span class="s2">"Chamber pop"</span><span class="p">,</span> <span class="s2">"Folktronica"</span><span class="p">,</span> <span class="s2">"Indietronica"</span><span class="p">],</span>
+    <span class="s2">"tracks"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="mi">1</span><span class="p">:</span> <span class="s2">"the 1"</span><span class="p">,</span>
+        <span class="mi">2</span><span class="p">:</span> <span class="s2">"cardigan"</span><span class="p">,</span>
+        <span class="mi">3</span><span class="p">:</span> <span class="s2">"the last great american dynasty"</span><span class="p">,</span>
+        <span class="mi">4</span><span class="p">:</span> <span class="s2">"exile (feat. Bon Iver)"</span><span class="p">,</span>
+        <span class="mi">5</span><span class="p">:</span> <span class="s2">"my tears ricochet"</span><span class="p">,</span>
+        <span class="mi">6</span><span class="p">:</span> <span class="s2">"mirrorball"</span><span class="p">,</span>
+        <span class="mi">7</span><span class="p">:</span> <span class="s2">"seven"</span><span class="p">,</span>
+        <span class="mi">8</span><span class="p">:</span> <span class="s2">"august"</span><span class="p">,</span>
+        <span class="mi">9</span><span class="p">:</span> <span class="s2">"this is me trying"</span><span class="p">,</span>
+        <span class="mi">10</span><span class="p">:</span> <span class="s2">"illicit affairs"</span><span class="p">,</span>
+        <span class="mi">11</span><span class="p">:</span> <span class="s2">"invisible string"</span><span class="p">,</span>
+        <span class="mi">12</span><span class="p">:</span> <span class="s2">"mad woman"</span><span class="p">,</span>
+        <span class="mi">13</span><span class="p">:</span> <span class="s2">"epiphany"</span><span class="p">,</span>
+        <span class="mi">14</span><span class="p">:</span> <span class="s2">"betty"</span><span class="p">,</span>
+        <span class="mi">15</span><span class="p">:</span> <span class="s2">"peace"</span><span class="p">,</span>
+        <span class="mi">16</span><span class="p">:</span> <span class="s2">"hoax"</span><span class="p">,</span>
+        <span class="mi">17</span><span class="p">:</span> <span class="s2">"the lakes - bonus track"</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">folklore_album</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{'title': 'folklore', 'artist': 'Taylor Swift', 'year': 2020, 'genre': ['Alternative rock', 'Indie folk', 'Chamber pop', 'Folktronica', 'Indietronica'], 'tracks': {1: 'the 1', 2: 'cardigan', 3: 'the last great american dynasty', 4: 'exile (feat. Bon Iver)', 5: 'my tears ricochet', 6: 'mirrorball', 7: 'seven', 8: 'august', 9: 'this is me trying', 10: 'illicit affairs', 11: 'invisible string', 12: 'mad woman', 13: 'epiphany', 14: 'betty', 15: 'peace', 16: 'hoax', 17: 'the lakes - bonus track'}}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">folklore_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'tracks'</span><span class="p">))</span>
+<span class="c1"># or</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">folklore_album</span><span class="p">[</span><span class="s1">'tracks'</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{1: 'the 1', 2: 'cardigan', 3: 'the last great american dynasty', 4: 'exile (feat. Bon Iver)', 5: 'my tears ricochet', 6: 'mirrorball', 7: 'seven', 8: 'august', 9: 'this is me trying', 10: 'illicit affairs', 11: 'invisible string', 12: 'mad woman', 13: 'epiphany', 14: 'betty', 15: 'peace', 16: 'hoax', 17: 'the lakes - bonus track'}
+{1: 'the 1', 2: 'cardigan', 3: 'the last great american dynasty', 4: 'exile (feat. Bon Iver)', 5: 'my tears ricochet', 6: 'mirrorball', 7: 'seven', 8: 'august', 9: 'this is me trying', 10: 'illicit affairs', 11: 'invisible string', 12: 'mad woman', 13: 'epiphany', 14: 'betty', 15: 'peace', 16: 'hoax', 17: 'the lakes - bonus track'}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">folklore_album</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>title: folklore
+artist: Taylor Swift
+year: 2020
+genre: ['Alternative rock', 'Indie folk', 'Chamber pop', 'Folktronica', 'Indietronica']
+tracks: {1: 'the 1', 2: 'cardigan', 3: 'the last great american dynasty', 4: 'exile (feat. Bon Iver)', 5: 'my tears ricochet', 6: 'mirrorball', 7: 'seven', 8: 'august', 9: 'this is me trying', 10: 'illicit affairs', 11: 'invisible string', 12: 'mad woman', 13: 'epiphany', 14: 'betty', 15: 'peace', 16: 'hoax', 17: 'the lakes - bonus track'}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tracks_dict</span> <span class="o">=</span> <span class="n">folklore_album</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span>
+<span class="n">track</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">song</span> <span class="ow">in</span> <span class="n">tracks_dict</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Track "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">track</span><span class="p">)</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">song</span><span class="p">))</span>
+    <span class="n">track</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Track 1: the 1
+Track 2: cardigan
+Track 3: the last great american dynasty
+Track 4: exile (feat. Bon Iver)
+Track 5: my tears ricochet
+Track 6: mirrorball
+Track 7: seven
+Track 8: august
+Track 9: this is me trying
+Track 10: illicit affairs
+Track 11: invisible string
+Track 12: mad woman
+Track 13: epiphany
+Track 14: betty
+Track 15: peace
+Track 16: hoax
+Track 17: the lakes - bonus track
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
