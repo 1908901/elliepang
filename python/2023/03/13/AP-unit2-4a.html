@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      13 min read
+      15 min read
     
 </span></p>
 
@@ -542,7 +542,7 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Records exist uid 81729, or error.
-Added new dog Bean, with uid 83792
+Records exist uid 83792, or error.
 Records exist uid 80032, or error.
 Records exist uid 90276, or error.
 Records exist uid 90277, or error.
@@ -695,11 +695,90 @@ Records exist uid 90277, or error.
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Invalid date el require YYYY-mm-dd, date defaulted to 03-21-2023
-Created
- {'id': 9, 'image': 'el', 'link': 'el', 'name': 'el', 'uid': 'el', 'breed': 'el', 'sex': 'el', 'dob': '03-21-2023', 'age': 0, 'price': 'el'}
-</pre>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
+<span class="ansi-green-fg">/var/folders/ry/vf9wstbj0bs5fggn2g7cq48c0000gn/T/ipykernel_20718/551872496.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     45</span>             print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"Unknown error uid {uid}"</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     46</span> 
+<span class="ansi-green-fg">---&gt; 47</span><span class="ansi-red-fg"> </span>create<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/var/folders/ry/vf9wstbj0bs5fggn2g7cq48c0000gn/T/ipykernel_20718/551872496.py</span> in <span class="ansi-cyan-fg">create</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span>     <span class="ansi-red-fg"># optimize user time to see if uid exists</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span>     uid <span class="ansi-blue-fg">=</span> input<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"Enter your user id:"</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">----&gt; 5</span><span class="ansi-red-fg">     </span>dog <span class="ansi-blue-fg">=</span> find_by_uid<span class="ansi-blue-fg">(</span>uid<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      6</span>     <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">      7</span>         print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"Found\n"</span><span class="ansi-blue-fg">,</span> dog<span class="ansi-blue-fg">.</span>read<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/var/folders/ry/vf9wstbj0bs5fggn2g7cq48c0000gn/T/ipykernel_20718/533973387.py</span> in <span class="ansi-cyan-fg">find_by_uid</span><span class="ansi-blue-fg">(uid)</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> <span class="ansi-green-fg">def</span> find_by_uid<span class="ansi-blue-fg">(</span>uid<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span>     <span class="ansi-green-fg">with</span> app<span class="ansi-blue-fg">.</span>app_context<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">----&gt; 4</span><span class="ansi-red-fg">         </span>dog <span class="ansi-blue-fg">=</span> Dog<span class="ansi-blue-fg">.</span>query<span class="ansi-blue-fg">.</span>filter_by<span class="ansi-blue-fg">(</span>_uid<span class="ansi-blue-fg">=</span>uid<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>first<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span>     <span class="ansi-green-fg">return</span> dog <span class="ansi-red-fg"># returns dog object</span>
+<span class="ansi-green-intense-fg ansi-bold">      6</span> 
+
+<span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/query.py</span> in <span class="ansi-cyan-fg">first</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2750</span>             <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_iter<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>first<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>  <span class="ansi-red-fg"># type: ignore</span>
+<span class="ansi-green-intense-fg ansi-bold">   2751</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 2752</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>limit<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>_iter<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>first<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>  <span class="ansi-red-fg"># type: ignore</span>
+<span class="ansi-green-intense-fg ansi-bold">   2753</span> 
+<span class="ansi-green-intense-fg ansi-bold">   2754</span>     <span class="ansi-green-fg">def</span> one_or_none<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">-&gt;</span> Optional<span class="ansi-blue-fg">[</span>_T<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/result.py</span> in <span class="ansi-cyan-fg">first</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1771</span> 
+<span class="ansi-green-intense-fg ansi-bold">   1772</span>         """
+<span class="ansi-green-fg">-&gt; 1773</span><span class="ansi-red-fg">         return self._only_one_row(
+</span><span class="ansi-green-intense-fg ansi-bold">   1774</span>             raise_for_second_row<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">False</span><span class="ansi-blue-fg">,</span> raise_for_none<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">False</span><span class="ansi-blue-fg">,</span> scalar<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">False</span>
+<span class="ansi-green-intense-fg ansi-bold">   1775</span>         )
+
+<span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/result.py</span> in <span class="ansi-cyan-fg">_only_one_row</span><span class="ansi-blue-fg">(self, raise_for_second_row, raise_for_none, scalar)</span>
+<span class="ansi-green-intense-fg ansi-bold">    730</span>         onerow <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_fetchone_impl
+<span class="ansi-green-intense-fg ansi-bold">    731</span> 
+<span class="ansi-green-fg">--&gt; 732</span><span class="ansi-red-fg">         </span>row<span class="ansi-blue-fg">:</span> Optional<span class="ansi-blue-fg">[</span>_InterimRowType<span class="ansi-blue-fg">[</span>Any<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> onerow<span class="ansi-blue-fg">(</span>hard_close<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    733</span>         <span class="ansi-green-fg">if</span> row <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    734</span>             <span class="ansi-green-fg">if</span> raise_for_none<span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/result.py</span> in <span class="ansi-cyan-fg">_fetchone_impl</span><span class="ansi-blue-fg">(self, hard_close)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1658</span>         self<span class="ansi-blue-fg">,</span> hard_close<span class="ansi-blue-fg">:</span> bool <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">False</span>
+<span class="ansi-green-intense-fg ansi-bold">   1659</span>     ) -&gt; Optional[_InterimRowType[Row[Any]]]:
+<span class="ansi-green-fg">-&gt; 1660</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_real_result<span class="ansi-blue-fg">.</span>_fetchone_impl<span class="ansi-blue-fg">(</span>hard_close<span class="ansi-blue-fg">=</span>hard_close<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1661</span> 
+<span class="ansi-green-intense-fg ansi-bold">   1662</span>     <span class="ansi-green-fg">def</span> _fetchall_impl<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">-&gt;</span> List<span class="ansi-blue-fg">[</span>_InterimRowType<span class="ansi-blue-fg">[</span>Row<span class="ansi-blue-fg">[</span>Any<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/result.py</span> in <span class="ansi-cyan-fg">_fetchone_impl</span><span class="ansi-blue-fg">(self, hard_close)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2250</span>             self<span class="ansi-blue-fg">.</span>_raise_hard_closed<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2251</span> 
+<span class="ansi-green-fg">-&gt; 2252</span><span class="ansi-red-fg">         </span>row <span class="ansi-blue-fg">=</span> next<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>iterator<span class="ansi-blue-fg">,</span> _NO_ROW<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2253</span>         <span class="ansi-green-fg">if</span> row <span class="ansi-green-fg">is</span> _NO_ROW<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   2254</span>             self<span class="ansi-blue-fg">.</span>_soft_close<span class="ansi-blue-fg">(</span>hard<span class="ansi-blue-fg">=</span>hard_close<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/loading.py</span> in <span class="ansi-cyan-fg">chunks</span><span class="ansi-blue-fg">(size)</span>
+<span class="ansi-green-intense-fg ansi-bold">    189</span>                     <span class="ansi-green-fg">break</span>
+<span class="ansi-green-intense-fg ansi-bold">    190</span>             <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 191</span><span class="ansi-red-fg">                 </span>fetch <span class="ansi-blue-fg">=</span> cursor<span class="ansi-blue-fg">.</span>_raw_all_rows<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    192</span> 
+<span class="ansi-green-intense-fg ansi-bold">    193</span>             <span class="ansi-green-fg">if</span> single_entity<span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/result.py</span> in <span class="ansi-cyan-fg">_raw_all_rows</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    519</span>         <span class="ansi-green-fg">assert</span> make_row <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">None</span>
+<span class="ansi-green-intense-fg ansi-bold">    520</span>         rows <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_fetchall_impl<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">--&gt; 521</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> <span class="ansi-blue-fg">[</span>make_row<span class="ansi-blue-fg">(</span>row<span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">for</span> row <span class="ansi-green-fg">in</span> rows<span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">    522</span> 
+<span class="ansi-green-intense-fg ansi-bold">    523</span>     <span class="ansi-green-fg">def</span> _allrows<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">-&gt;</span> List<span class="ansi-blue-fg">[</span>_R<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/result.py</span> in <span class="ansi-cyan-fg">&lt;listcomp&gt;</span><span class="ansi-blue-fg">(.0)</span>
+<span class="ansi-green-intense-fg ansi-bold">    519</span>         <span class="ansi-green-fg">assert</span> make_row <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">None</span>
+<span class="ansi-green-intense-fg ansi-bold">    520</span>         rows <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_fetchall_impl<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">--&gt; 521</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> <span class="ansi-blue-fg">[</span>make_row<span class="ansi-blue-fg">(</span>row<span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">for</span> row <span class="ansi-green-fg">in</span> rows<span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">    522</span> 
+<span class="ansi-green-intense-fg ansi-bold">    523</span>     <span class="ansi-green-fg">def</span> _allrows<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">-&gt;</span> List<span class="ansi-blue-fg">[</span>_R<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">lib/sqlalchemy/cyextension/resultproxy.pyx</span> in <span class="ansi-cyan-fg">sqlalchemy.cyextension.resultproxy.BaseRow.__init__</span><span class="ansi-blue-fg">()</span>
+
+<span class="ansi-green-fg">lib/sqlalchemy/cyextension/processors.pyx</span> in <span class="ansi-cyan-fg">sqlalchemy.cyextension.processors.str_to_date</span><span class="ansi-blue-fg">()</span>
+
+<span class="ansi-red-fg">ValueError</span>: Invalid isoformat string: ''</pre>
 </div>
 </div>
 
@@ -919,7 +998,7 @@ Created
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Row with ID 8 has been deleted.
+<pre>Row with ID 9 has been deleted.
 </pre>
 </div>
 </div>
@@ -990,9 +1069,23 @@ Created
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>No UID 1 was found in the table
-</pre>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">OperationalError</span>                          Traceback (most recent call last)
+<span class="ansi-green-fg">/var/folders/ry/vf9wstbj0bs5fggn2g7cq48c0000gn/T/ipykernel_20718/1106125655.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     31</span>     conn<span class="ansi-blue-fg">.</span>close<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     32</span> 
+<span class="ansi-green-fg">---&gt; 33</span><span class="ansi-red-fg"> </span>update<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/var/folders/ry/vf9wstbj0bs5fggn2g7cq48c0000gn/T/ipykernel_20718/1106125655.py</span> in <span class="ansi-cyan-fg">update</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      9</span> 
+<span class="ansi-green-intense-fg ansi-bold">     10</span>     <span class="ansi-red-fg"># Connect to the database file</span>
+<span class="ansi-green-fg">---&gt; 11</span><span class="ansi-red-fg">     </span>conn <span class="ansi-blue-fg">=</span> sqlite3<span class="ansi-blue-fg">.</span>connect<span class="ansi-blue-fg">(</span>database<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     12</span> 
+<span class="ansi-green-intense-fg ansi-bold">     13</span>     <span class="ansi-red-fg"># Create a cursor object to execute SQL commands</span>
+
+<span class="ansi-red-fg">OperationalError</span>: unable to open database file</pre>
 </div>
 </div>
 
