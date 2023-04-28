@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      10 min read
     
 </span></p>
 
@@ -118,6 +118,7 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#Check-In">Check-In </a></li>
+<li class="toc-entry toc-h1"><a href="#Slide-Hacks">Slide Hacks </a></li>
 <li class="toc-entry toc-h1"><a href="#NGINX">NGINX </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#Configuration">Configuration </a>
@@ -134,6 +135,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Bonus-(0.05)">Bonus (0.05) </a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h1"><a href="#Link-to-Bonus-Diagram">Link to Bonus Diagram </a></li>
 <li class="toc-entry toc-h1"><a href="#CORS-Hacks">CORS Hacks </a></li>
 <li class="toc-entry toc-h1"><a href="#KASM-Hacks">KASM Hacks </a></li>
 <li class="toc-entry toc-h1"><a href="#AWS/RDS-Hacks">AWS/RDS Hacks </a></li>
@@ -166,6 +168,20 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>142.250.189.14
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -185,6 +201,20 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Successfully connected!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -196,8 +226,44 @@ window.onload = wrap_img;
 </h2>
 <ol>
 <li>What is an IP address?</li>
+</ol>
+<ul>
+<li>an IP address is a unique set of numbers assigned to every device that's connected to the internet, allowing it to be identified and communicate with other devices on the network.</li>
+</ul>
+<ol>
 <li>What is a TCP port?</li>
 </ol>
+<ul>
+<li>a TCP port is a numbered endpoint on a device that's used to identify a specific process or application that's communicating over a network using the TCP/IP protocol.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Slide-Hacks">
+<a class="anchor" href="#Slide-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Slide Hacks<a class="anchor-link" href="#Slide-Hacks"> </a>
+</h1>
+<ol>
+<li>What does DNS stand for?</li>
+</ol>
+<ul>
+<li>Domain Name Service</li>
+</ul>
+<ol>
+<li>What is the purpose of DNS?</li>
+</ol>
+<p>Its goal is to provide each domain name an IP address. For users to access websites and other online resources by their well-known names rather than cryptic numerical IP addresses, it serves as a phonebook for the internet.</p>
+<ol>
+<li>How does DNS work?</li>
+</ol>
+<p>When you enter a domain name into your web browser, such as www.googledocs.com, your computer asks a DNS server for the IP address that corresponds to that domain name. The IP address linked to the domain name is then found in the DNS server's database and sent back to your machine. Following that, your computer connects to the server hosting the website you requested using that IP address.</p>
+<ol>
+<li>What is a DNS resolver?</li>
+</ol>
+<p>It is a computer program or service that aids your device in locating the IP address connected to a desired internet domain name. The DNS resolver converts a domain name you enter into a corresponding IP address so that your device may connect to the correct server and show the website or other online resource you requested when you input it into your web browser.</p>
 
 </div>
 </div>
@@ -221,6 +287,38 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>HTTP/1.1 200 OK
+Date: Wed, 26 Apr 2023 20:54:58 GMT
+Expires: -1
+Cache-Control: private, max-age=0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce-W7XcOGwMmw9CdAnPlXd9Vg' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Server: gws
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: 1P_JAR=2023-04-26-20; expires=Fri, 26-May-2023 20:54:58 GMT; path=/; domain=.google.com; Secure
+Set-Cookie: AEC=AUEFqZe6i5T_3eyU7u-v-I66dcAJthEwkMnN7kzk2Po8rqvYjBVsB_VJPhM; expires=Mon, 23-Oct-2023 20:54:58 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax
+Set-Cookie: NID=511=TS4R1JI9boppaYrtmpI_TI22eHA1D27zXVO2OYbS2UpxZf1s11oKJPO4eBc9EZ8D_y52Hozkwb7-lLGKFA_SlsNKW9WanJeRj3OeGCi6jsLeiYBmuinpiFh3-2g9DfXPyoetfPzYFOk3IWCPO4uyRukKHx0mnWFSVD22dRYpQo0; expires=Thu, 26-Oct-2023 20:54:58 GMT; path=/; domain=.google.com; HttpOnly
+Accept-Ranges: none
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+
+5a97
+&lt;!doctype html&gt;&lt;html itemscope="" itemtype="http://schema.org/WebPage" lang="en"&gt;&lt;head&gt;&lt;meta content="Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for." name="description"&gt;&lt;meta content="noodp" name="robots"&gt;&lt;meta content="text/html; charset=UTF-8" http-equiv="Content-Type"&gt;&lt;meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"&gt;&lt;title&gt;Google&lt;/title&gt;&lt;script nonce="W7XcOGwMmw9CdAnPlXd9Vg"&gt;(function(){window.google={kEI:'oo9JZPGbLJv7kPIPka6IgAs',kEXPI:'0,1359409,6058,207,4804,2316,383,246,5,1129120,1633,1196140,621,380097,16114,19398,9286,22430,1362,12320,17579,4998,13228,3847,38444,2872,2891,3926,214,4209,3405,606,29880,788,30022,15324,432,3,1590,1,16916,2652,4,1528,2304,24858,4204,13065,16638,1457,16786,5821,2536,4094,7596,1,11942,
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -251,6 +349,22 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Status code: 200
+Headers: {'Date': 'Wed, 26 Apr 2023 20:55:05 GMT', 'Expires': '-1', 'Cache-Control': 'private, max-age=0', 'Content-Type': 'text/html; charset=ISO-8859-1', 'Content-Security-Policy-Report-Only': "object-src 'none';base-uri 'self';script-src 'nonce-H1FMeaCZcrg7lLbFlcj6_Q' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp", 'P3P': 'CP="This is not a P3P policy! See g.co/p3phelp for more info."', 'Content-Encoding': 'gzip', 'Server': 'gws', 'X-XSS-Protection': '0', 'X-Frame-Options': 'SAMEORIGIN', 'Set-Cookie': '1P_JAR=2023-04-26-20; expires=Fri, 26-May-2023 20:55:05 GMT; path=/; domain=.google.com; Secure, AEC=AUEFqZc29zhEEf2bT9IdMUNvrK92J5FHz0FnqYHhayWTN_S_3LJNUORMTQ; expires=Mon, 23-Oct-2023 20:55:05 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax, NID=511=tQWQq421FTJO-Z9fbha_pBypYRYhIg6bXeQWYdp82dScYEEGGCnCSw5odOsgmlYkKRlG40UPksbUr1wjxpOoF62Ya5gpNEghzNKN3LC6WT6b0LdYZk4hoWkJl2A6MRfOHMxIgRdzmKv0CSm6k3HHVtV4DromEQp089fWmxTwNS8; expires=Thu, 26-Oct-2023 20:55:05 GMT; path=/; domain=.google.com; HttpOnly', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'Transfer-Encoding': 'chunked'}
+Response text: &lt;!doctype html&gt;&lt;html itemscope="" itemtype="http://schema.org/WebPage" lang="en"&gt;&lt;head&gt;&lt;meta content
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -277,6 +391,38 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;html&gt;&lt;body onload="document.forms[0].submit()"&gt;
+&lt;form action="https://ckf03.powayusd.com/cgi-bin/blockpage/poway.cgi" method="GET"&gt;
+&lt;input type="Hidden" name="URL" value="3.130.255.192"&gt;
+&lt;input type="Hidden" name="CAT" value="Non-Managed"&gt;
+&lt;input type="Hidden" name="CATNO" value="-1"&gt;
+&lt;input type="Hidden" name="ACC" value="1908901/pusd"&gt;
+&lt;input type="Hidden" name="WHY" value="Policy=student_hs; AD Group=idm-all_students_hs"&gt;
+&lt;input type="Hidden" name="MOD" value="2"&gt;
+&lt;input type="Hidden" name="APP" value="spotify"&gt;
+&lt;input type="Hidden" name="ISO" value="App Permanently Blocked"&gt;
+&lt;input type="Hidden" name="IPA" value="172.16.1.7"&gt;
+&lt;input type="Hidden" name="RAW" value="http://3.130.255.192"&gt;
+&lt;input type="Hidden" name="AUTH0" value=",Non-Managed"&gt;
+&lt;input type="Hidden" name="PGE" value="https://ckf03.powayusd.com/cgi-bin/blockpage/poway.cgi"&gt;
+&lt;input type="Hidden" name="STR" value="null,null,null,null,null"&gt;
+&lt;input type="Hidden" name="SRV" value="null"&gt;
+&lt;input type="Hidden" name="AUTH1" value=",3.130.255.192,Non-Managed"&gt;
+&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;
+
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -331,8 +477,47 @@ window.onload = wrap_img;
 </h2>
 <ol>
 <li>Research 1 HTTP header and describe, in detail, its purpose.</li>
+</ol>
+<ul>
+<li>the User-Agent header is a commonly used HTTP header that identifies the client making the request to the server. It contains information about the client's software and operating system, allowing servers to deliver content optimized for the client's configuration. This header is also used by web developers for analytics and tracking purposes. However, it can be modified by users or applications, which can raise privacy and security concerns. Therefore, it's important for web servers and applications to validate and sanitize incoming HTTP headers to prevent unauthorized access or malicious activity.</li>
+</ul>
+<ol>
 <li>Write a line in a sample NGINX configuration that will add that specific header to the <code>/information</code> location</li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">location</span> <span class="o">/</span><span class="n">information</span> <span class="p">{</span>
+  <span class="n">add_header</span> <span class="n">X</span><span class="o">-</span><span class="n">Custom</span><span class="o">-</span><span class="n">Header</span> <span class="n">a</span><span class="o">-</span><span class="n">header</span><span class="o">-</span><span class="n">value</span><span class="p">;</span>
+  <span class="c1">#configuration directives</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
 <li>Explain the purpose of the load balancing performed by NGINX</li>
+</ol>
+<ul>
+<li>the purpose of load balancing with NGINX is to evenly distribute incoming network traffic across multiple servers to improve application performance, availability, and reliability. This helps prevent any single server from becoming overwhelmed and improves scalability and fault tolerance. NGINX also provides other features like caching, SSL termination, and content routing.</li>
+</ul>
+<ol>
 <li>Modify the following code block to obtain the value of the secret header on <code>/products</code> of the AWS site</li>
 </ol>
 
@@ -350,10 +535,24 @@ window.onload = wrap_img;
 
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"http://"</span> <span class="o">+</span> <span class="n">aws</span><span class="o">+</span> <span class="s2">"/products"</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"The secret header is:"</span><span class="p">,</span> <span class="s2">"..."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The secret header is:"</span><span class="p">,</span> <span class="s2">"'X-Cooler-Header': 'This is my secret header!'"</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The secret header is: 'X-Cooler-Header': 'This is my secret header!'
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -367,14 +566,16 @@ window.onload = wrap_img;
 <a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
 </h1>
 <ul>
-<li>Complete the above check-in questions and change the hosts (0.1)</li>
-<li>Complete the above code-segment to retrieve the secret header (0.1)</li>
+<li>Complete the above check-in questions and change the hosts (0.1) ☑️</li>
+<li>Complete the above code-segment to retrieve the secret header (0.1) ☑️</li>
 </ul>
 <h2 id="Bonus-(0.05)">
 <a class="anchor" href="#Bonus-(0.05)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bonus (0.05)<a class="anchor-link" href="#Bonus-(0.05)"> </a>
 </h2>
 <p>Create a diagram showing the layers of abstraction that allow us to use HTTP (IP, TCP, etc.)</p>
-
+<h1 id="Link-to-Bonus-Diagram">
+<a class="anchor" href="#Link-to-Bonus-Diagram" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/1908901/elliepang/issues/32#issue-1687949671">Link to Bonus Diagram</a><a class="anchor-link" href="#Link-to-Bonus-Diagram"> </a>
+</h1>
 </div>
 </div>
 </div>
@@ -386,21 +587,60 @@ window.onload = wrap_img;
 </h1>
 <ol>
 <li>Explain what CORS is and what it stands for</li>
+</ol>
+<p>CORS stands for Cross-Origin Resource Sharing. It is a security feature implemented in web browsers that allows servers to specify which domains are allowed to access their resources and which requests are allowed to access those resources. It is designed to prevent malicious scripts from executing in a user's browser by blocking unauthorized cross-domain requests.</p>
+<ol>
 <li>Describe how you would be able to implement CORS into your own websites</li>
+</ol>
+<ul>
+<li>to implement CORS in a website, the server needs to set appropriate headers in its response to requests. The header "Access-Control-Allow-Origin" is used to specify which domains are allowed to access the resources. For example, if a server wants to allow access from all domains, it can set the header to "*". If it only wants to allow access from a specific domain, it can set the header to that domain. Additionally, the server can specify which HTTP methods and headers are allowed to be used in cross-origin requests.</li>
+</ul>
+<ol>
 <li>Describe why you would want to implement CORS into your own websites</li>
+</ol>
+<ul>
+<li>CORS is important to implement in a website to protect the user's data and prevent unauthorized access to resources. It allows a server to control which domains can access its resources, which prevents malicious scripts from executing in a user's browser. By implementing CORS, a website can also allow third-party domains to access its resources, which is necessary for some features, such as embedding videos or accessing APIs.</li>
+</ul>
+<ol>
 <li>How could use CORS to benefit yourself in the future?</li>
 </ol>
+<ul>
+<li>using CORS can benefit website owners by allowing them to provide better user experiences and more secure websites. For example, by allowing third-party domains to access resources, a website can provide more features and integrate with other services. Additionally, by implementing CORS, website owners can protect user data and prevent unauthorized access to resources, which can help build trust with users and improve the overall security of the website.</li>
+</ul>
 <p>Total: 0.2 points</p>
 <h1 id="KASM-Hacks">
 <a class="anchor" href="#KASM-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>KASM Hacks<a class="anchor-link" href="#KASM-Hacks"> </a>
 </h1>
 <ol>
 <li>What is the purpose of "sudo" when running commands in terminal?</li>
+</ol>
+<ul>
+<li>the "sudo" command in terminal stands for "superuser do" and is used to run commands with administrative privileges. It allows a user to execute commands as the root user or another user with elevated privileges, which is necessary to perform certain system-level tasks.</li>
+</ul>
+<ol>
 <li>What are some commands which allow us to look at how the storage of a machine is set up as?</li>
+</ol>
+<ul>
+<li>common commands to look at how storage is set up on a machine include "df -h" which displays disk usage in a human-readable format, "lsblk" which lists block devices including disks and partitions, and "parted" which can be used to view partition information and create new partitions.</li>
+</ul>
+<ol>
 <li>What do you think are some alternatives to running "curl -O" to get the zip file for KASM?</li>
+</ol>
+<ul>
+<li>alternatives to running "curl -O" to get the zip file for KASM could include using a web browser to download the file, using a package manager to install KASM, or using a file transfer protocol (FTP) client to download the file.</li>
+</ul>
+<ol>
 <li>What kind of commands do you think the "install.sh" command has and why is it necessary to call it?</li>
+</ol>
+<ul>
+<li>"install.sh" command likely contains commands to install and configure KASM on the machine. It may include tasks such as downloading dependencies, setting up network configurations, and configuring security settings. Calling the "install.sh" command is necessary to ensure that KASM is installed and configured correctly on the machine.</li>
+</ul>
+<ol>
 <li>Explain in at least 3-4 sentences how deploying KASM is related to/requires other topics talked about in the lesson and/or potential ways to add things mentioned in the lesson to this guide.</li>
 </ol>
+<ul>
+<li>deploying KASM is related to and requires knowledge of several other topics discussed in the lesson, such as server administration, networking, and security. In order to deploy KASM, one would need to have knowledge of how to configure a server, set up network connections, and ensure proper security measures are in place. Additionally, potential ways to add to this guide could include instructions on how to configure firewalls, set up secure remote access, and integrate KASM with other tools such as monitoring or backup solutions.</li>
+</ul>
 <p>Total: 0.2 points</p>
 <h1 id="AWS/RDS-Hacks">
 <a class="anchor" href="#AWS/RDS-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>AWS/RDS Hacks<a class="anchor-link" href="#AWS/RDS-Hacks"> </a>
