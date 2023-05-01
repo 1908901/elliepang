@@ -30,7 +30,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 - Inspect Running Code
 - Inspect Variables
 
-![image](https://cdn.discordapp.com/attachments/806618712056528906/1102316822675607572/IMG_4308.jpg)
+![]({{site.baseurl}}/images/Purple Floral Note Page Border (1).png
 
 ![Computer Hardware](https://cdn.discordapp.com/attachments/806618712056528906/1102369459886379060/IMG_4219.jpg)
 
